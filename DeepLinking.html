@@ -1,0 +1,281 @@
+<html>
+    <head>
+        <!-- Converted with https://markdowntohtml.com/ -->
+        <style>
+            /*tr:nth-child(even) {background-color: #f2f2f2;}*/
+            .content {
+                margin-left: 1.5%;
+                margin-right: 1.5%;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+
+            th {
+                background-color: #4caf50;
+                color: white;
+            }
+
+            thead, td {
+                border-bottom: 1px solid #ddd;
+            }
+
+            h1 {
+                padding-left: 4%;
+                margin-top: 32px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 48pt;
+            }
+
+            h2 {
+                padding-left: 1.5%;
+                margin-top: 32px;
+                margin-right: 40%;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 32px;
+            }
+
+            .strike {
+                text-decoration: line-through;
+                color: #e33;
+            }
+
+            code {
+                background-color: #fdd;
+                color: #e33;
+                border-radius: 4px;
+                padding: 1px 3px 1px 3px;
+            }
+
+            .variable {
+                background-color: #cce;
+                color: #33f;
+            }
+
+            .optionalVar {
+                background-color: #d5d5ef;
+                color: #9a9aff;
+            }
+
+            img {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class=content>
+            <h1 id="deep-linking">Deep Linking with Lyf</h1>
+            <h2 id="link-types-behaviour">Link Types &amp; Behaviour</h2>
+            <p>There are multiple deep link types supported in Lyf, and they will behave in different ways depending on where
+                they are clicked and the state of the app installation on the phone.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width:10%;">Deep Link Type</th>
+                        <th style="width:20%;">Example</th>
+                        <th style="text-align:center; width:10%;">Desktop click</th>
+                        <th style="text-align:center; width:20%;">Phone click. App not installed (deferred linking) *</th>
+                        <th style="text-align:center; width:15%;">Phone click. App installed *</th>
+                        <th style="width:25%;">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Custom Scheme</td>
+                        <td><code>lyfapp://li.nk/beat?id=36094</code></td>
+                        <td style="text-align:center">not clickable</td>
+                        <td style="text-align:center">not clickable</td>
+                        <td style="text-align:center">Opens desired content in app</td>
+                        <td>This is added as it is required by Branch for some links</td>
+                    </tr>
+                    <tr>
+                        <td>Universal Link</td>
+                        <td><code>https://www.lyfapp.com/beat?id=36094</code></td>
+                        <td style="text-align:center">Opens <a href="https://www.lyfapp.com">Lyf homepage</a></td>
+                        <td style="text-align:center">Sends user to Apple App Store / Google Play Store</td>
+                        <td style="text-align:center">Opens desired content in app</td>
+                        <td>This is the standard deep linking supported by Android &amp; iOS</td>
+                    </tr>
+                    <tr>
+                        <td>Branch Link</td>
+                        <td><code>https://lyfapp.app.link/seeing_a_married_man</code></td>
+                        <td style="text-align:center">Opens <a href="https://www.lyfapp.com/member/">Lyf homepage</a></td>
+                        <td style="text-align:center">Takes user to App Store / Play Store. When app has installed, takes user
+                            to desired content in app</td>
+                        <td style="text-align:center">Opens desired content in app</td>
+                        <td>Requires links to be generated on Branch service including metadata containing the desired
+                            <em>Universal Link</em></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>*</strong> The installed version of the app must be able to handle deep-links. Previous versions of Lyf
+                which do not handle deep-linking will have the same behaviour as not having the app installed at all.</p>
+            <h2 id="our-universal-links">Our Universal Links</h2>
+            <p>Our universal links will open specific content in the app. These links must conform to a certain format to work
+                in the app.</p>
+            <p>The format is: </br>
+               <span style="margin-left:32px;font-size:14pt;"><code>https://www.lyfapp.com/</code><code class=variable>{action}</code><code>?</code><code class=variable>{parameter1}</code>&thinsp;<code class=variable>&amp;{parameter2}</code></span>
+            </p>
+            <p>i.e.
+                <code>https://www.lyfapp.com/beat?id=36094</code> will open the beat with id=36094 in a
+                <code>JourneyDetailController</code>.</p>
+            <h3 id="link-action-">Link Action:</h3>
+            <ul>
+                <li><code>beat</code></li>
+                <li><code>filter</code></li>
+            </ul>
+            <h3 id="parameters-">Parameters:</h3>
+            <ul>
+                <li>For a <strong><code>BEAT</code></strong> link:<ul>
+                        <li>Must specify the JourneyId with <code>id={journeyIdNumber}</code></li>
+                        <li>Can optionally specify a starting post with <code>post={postNumber}</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>For a <strong><code>FILTER</code></strong> link:
+                        Must specify the filter type with <code>filter=</code>. Possible values are:</p>
+                    <ul>
+                        <li><code>filter=all</code></li>
+                        <li><code>filter=following</code></li>
+                        <li><code>filter=new</code></li>
+                        <li><code>filter=welcome</code></li>
+                        <li><code>filter=categories</code></li>
+                    </ul>
+                </li>
+            </ul>
+            <p>If it’s a <code>categories</code> filter, a second parameter must specify the category name with
+                <code>category={name}</code>:</p>
+            <ul>
+                <li><code>filter=categories&amp;category=relationships</code></li>
+            </ul>
+            <p>The category name must be an exact match to one of the categories listed in the app (but lowercase).</p>
+            <p><img src="assets/categories.png" alt="categories.png"></p>
+            <p>For example, <code>relationships</code> is correct, but <code>relationship</code> will not work</p>
+            <h3 id="putting-it-together">Putting it together</h3>
+            <p><a href="https://launchschool.com/books/http/read/what_is_a_url#querystringsparameters">Putting parameters
+                    together</a> -- Parameters start with a &#39;<code>?</code>&#39;. Multiple parameters are seperated by an
+                &#39;<code>&amp;</code>&#39;</p>
+            <p>So, putting it all together:
+                    <span style="margin-left:32px;font-size:14pt;"><code>https://www.lyfapp.com/</code><code class=variable>{action}</code><code>?</code><code class=variable>{parameter1}</code>&thinsp;<code class=variable>&amp;{parameter2}</code></span>
+            </p>
+            <p>For examples, see the test cases below.</p>
+            <h3 id="some-test-cases">Some Test Cases</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test case</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Go to certain beat</td>
+                        <td><a href="http://www.lyfapp.com/beat?id=1234">www.lyfapp.com/beat?id=1234</a></td>
+                    </tr>
+                    <tr>
+                        <td>Go to certain post in a beat</td>
+                        <td><a href="http://www.lyfapp.com/beat?id=1234&amp;post=2">www.lyfapp.com/beat?id=1234&amp;post=2</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Beat does not exist</td>
+                        <td><a href="http://www.lyfapp.com/beat?id=12384646544">www.lyfapp.com/beat?id=12384646544</a></td>
+                    </tr>
+                    <tr>
+                        <td>Post does not exist</td>
+                        <td><a
+                                href="http://www.lyfapp.com/beat?id=1234&amp;post=76855335189654">www.lyfapp.com/beat?id=1234&amp;post=76855335189654</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select ‘all’ filter on ‘Stream’ tab of Home</td>
+                        <td><a href="http://www.lyfapp.com/filter?filter=all">www.lyfapp.com/filter?filter=all</a></td>
+                    </tr>
+                    <tr>
+                        <td>Select ‘following’ filter on ‘Stream’ tab of Home</td>
+                        <td><a href="http://www.lyfapp.com/filter?filter=following">www.lyfapp.com/filter?filter=following</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select ‘new’ filter on ‘Stream’ tab of Home</td>
+                        <td><a href="http://www.lyfapp.com/filter?filter=new">www.lyfapp.com/filter?filter=new</a></td>
+                    </tr>
+                    <tr>
+                        <td>Select ‘welcome’ filter on ‘Stream’ tab of Home. Upcoming feature, not yet supported</td>
+                        <td><a href="http://www.lyfapp.com/filter?filter=welcome">www.lyfapp.com/filter?filter=welcome</a></td>
+                    </tr>
+                    <tr>
+                        <td>Select ‘Relationships’ filter on whatever tab (‘Stream’ or ‘Feed’) is active</td>
+                        <td><a
+                                href="http://www.lyfapp.com/filter?filter=categories&amp;category=relationships">www.lyfapp.com/filter?filter=categories&amp;category=relationships</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select category filter that does not exist</td>
+                        <td><a
+                                href="http://www.lyfapp.com/filter?filter=categories&amp;category=nonexistant">www.lyfapp.com/filter?filter=categories&amp;category=nonexistant</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3
+                id="suggested-in-our-gitlab-issue-ticket-https-gitlab-wemakeapps-net-lyf-issues-issues-7570-_-not-available-on-demo-api_-">
+                Suggested in our <a href="https://gitlab.wemakeapps.net/lyf/issues/issues/7570">GitLab issue ticket</a> (<em>*
+                    not available on Demo API</em>)</h3>
+            <ol>
+                <li><a href="http://www.lyfapp.com/beat?id=32930">www.lyfapp.com/beat?id=32930</a> <strong>Losing it ain&#39;t
+                        easy.</strong></li>
+                <li><a href="http://www.lyfapp.com/beat?id=36094">www.lyfapp.com/beat?id=36094</a> <strong>Seeing a Married
+                        Man</strong></li>
+                <li><a href="http://www.lyfapp.com/beat?id=77278">www.lyfapp.com/beat?id=77278</a> <strong>tales of the
+                        warrior</strong></li>
+                <li><a href="http://www.lyfapp.com/beat?id=103620">www.lyfapp.com/beat?id=103620</a> <em>Becoming eco
+                        friendly*</em></li>
+                <li><a href="http://www.lyfapp.com/beat?id=93026">www.lyfapp.com/beat?id=93026</a> <em>Fathering the Flock*</em>
+                </li>
+                <li><a href="http://www.lyfapp.com/beat?id=110145">www.lyfapp.com/beat?id=110145</a> <em>Healing from emotional
+                        wounds*</em></li>
+                <li><a href="http://www.lyfapp.com/beat?id=95406">www.lyfapp.com/beat?id=95406</a> <em>Ramped Anxiety...lotsa
+                        reasons*</em></li>
+                <li><a href="http://www.lyfapp.com/beat?id=104100">www.lyfapp.com/beat?id=104100</a> <em>Therapy diary*</em>
+                </li>
+            </ol>
+            <h2 id="deferred-deep-linking-with-branch">Deferred Deep Linking with Branch</h2>
+            <p>Using the Branch deep linking service, we can send a user to specific content within the app, whether they have
+                the app installed or not! For this to work, the links must be created within the Branch service. This is
+                typically done through the Branch Dashboard (but can also be done through their API).</p>
+            <h3 id="branch-link-creation-step-1">Branch Link Creation - Step 1</h3>
+            <ul>
+                <li><strong>Name</strong> of the link will appear on the Branch website when the user follows the link on
+                    desktop.</li>
+                <li><strong>Web URL</strong> is the Universal Link as defined below. The main element to get correct is
+                    <code>/{action}?{parameter}</code> part (in this case <code>/beat?id=36094</code>).</li>
+                <li><strong>utm_source</strong> this can be used to track campaign type (email, Facebook, Instagram) if desired.
+                </li>
+                <li><strong>utm_campaign</strong> can be used to track a campaign by name</li>
+            </ul>
+            <p><img src="assets/BranchLinkCreation1.png" alt="BranchLinkCreation1.png"></p>
+            <h3 id="branch-link-creation-step-2">Branch Link Creation - Step 2</h3>
+            <ul>
+                <li><strong>Link name</strong> The link name can be changed to anything you want here! Something related to the
+                    content for example.</li>
+                <li><strong>Data</strong> - Add an extra field with Key = <code>$deeplink_path</code>and Value =
+                    <code>{action}?{parameter}</code> the same as in the <code>$canonical_url</code>. The App will
+                    preferentially use this field first and use the <code>$canonical_url</code> as a fallback.</li>
+                <li><strong><code>$og_type</code></strong> is populated here by default. This is the Facebook <em>OpenGraph</em>
+                    <strong><em>type</em></strong> and can just as well be deleted, or changed to <em>*applink</em></li>
+            </ul>
+            <p><img src="assets/BranchLinkCreation2.png" alt="BranchLinkCreation2.png"></p>
+            <h2 id="custom-scheme-urls">Custom Scheme URLs</h2>
+            <p>The app also supports a custom URI Schema <code>lyfapp://</code> which would look like:
+                <code>lyfapp://{any host}/{action}</code>?<code>{parameter}</code>
+                There needs to be some sort of made up host name, I suggest <code>li.nk</code>.</p>
+            <p>i.e. <code>lyfapp://li.nk/beat?id=36094</code> would open beat 36094 in the app</p>
+        </div>
+    </body>
+</html>
