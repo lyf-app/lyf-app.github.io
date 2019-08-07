@@ -1,79 +1,30 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Converted with https://markdowntohtml.com/ -->
         <style>
             /*tr:nth-child(even) {background-color: #f2f2f2;}*/
-            .content {
-                margin-left: 1.5%;
-                margin-right: 1.5%;
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-
-            tr:hover {
-                background-color: #f5f5f5;
-            }
-
-            th {
-                background-color: #4caf50;
-                color: white;
-            }
-
-            thead, td {
-                border-bottom: 1px solid #ddd;
-            }
-
-            h1 {
-                padding-left: 4%;
-                margin-top: 32px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 48pt;
-            }
-
-            h2 {
-                padding-left: 1.5%;
-                margin-top: 32px;
-                margin-right: 40%;
-                border-bottom: 1px solid #ddd;
-                margin-bottom: 32px;
-            }
-
-            .strike {
-                text-decoration: line-through;
-                color: #e33;
-            }
-
-            code {
-                background-color: #fdd;
-                color: #e33;
-                border-radius: 4px;
-                padding: 1px 3px 1px 3px;
-            }
-
-            .variable {
-                background-color: #cce;
-                color: #33f;
-            }
-
-            .optionalVar {
-                background-color: #d5d5ef;
-                color: #9a9aff;
-            }
-
-            img {
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
+            .content { margin-left: 1.5%; margin-right: 1.5%; margin-bottom: 200px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+            tr:hover { background-color: #f5f5f5; }
+            th { background-color: #4caf50; color: white; }
+            thead, td { border-bottom: 1px solid #ddd; }
+            h1 { padding-left: 4%; margin-top: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 48pt; }
+            h2 { padding-left: 1.5%; margin-top: 32px; margin-right: 40%; border-bottom: 1px solid #ddd; margin-bottom: 32px; }
+            .strike { text-decoration: line-through; color: #e33; }
+            code { background-color: #fdd; color: #e33; border-radius: 4px; padding: 1px 3px 1px 3px; }
+            .variable { background-color: #cce; color: #33f; }
+            .optionalVar { background-color: #d5d5ef; color: #9a9aff; }
+            img { width: 80%; margin-left: auto; margin-right: auto; }
+            .strong { font-weight: bold; }
         </style>
     </head>
     <body>
-        <div class=content>
+        <div class="content container">
             <h1 id="deep-linking">Deep Linking with Lyf</h1>
             <h2 id="link-types-behaviour">Link Types &amp; Behaviour</h2>
             <p>There are multiple deep link types supported in Lyf, and they will behave in different ways depending on where
                 they are clicked and the state of the app installation on the phone.</p>
-            <table>
+            <table class=table>
                 <thead>
                     <tr>
                         <th style="width:10%;">Deep Link Type</th>
@@ -165,7 +116,7 @@
             </p>
             <p>For examples, see the test cases below.</p>
             <h3 id="some-test-cases">Some Test Cases</h3>
-            <table>
+            <table class=table>
                 <thead>
                     <tr>
                         <th>Test case</th>
@@ -250,6 +201,12 @@
                 the app installed or not! For this to work, the links must be created within the Branch service. This is
                 typically done through the Branch Dashboard (but can also be done through their API).</p>
             <h3 id="branch-link-creation-step-1">Branch Link Creation - Step 1</h3>
+            <p>Select the correct environment for link creation, either <span class=strong>TEST</span> or <span class=strong>LIVE</span>. The <span class=strong>LIVE</span> 
+                environment should only contain links used in the production environment to avoid inadvertent linking.</p>
+            <p style="width:200px;" class=ml-5><img src="assets/BranchLinkCreation-test.png" class="rounded" style="display:block;height:auto;width:100%;"></p>
+            <p>The following steps are reached through the following menu options:</p>
+            <p><img src="assets/BranchLinkCreation-menu.png"></p>
+            <h3 id="branch-link-creation-step-2">Branch Link Creation - Step 2</h3>
             <ul>
                 <li><strong>Name</strong> of the link will appear on the Branch website when the user follows the link on
                     desktop.</li>
@@ -260,7 +217,7 @@
                 <li><strong>utm_campaign</strong> can be used to track a campaign by name</li>
             </ul>
             <p><img src="assets/BranchLinkCreation1.png" alt="BranchLinkCreation1.png"></p>
-            <h3 id="branch-link-creation-step-2">Branch Link Creation - Step 2</h3>
+            <h3 id="branch-link-creation-step-3">Branch Link Creation - Step 3</h3>
             <ul>
                 <li><strong>Link name</strong> The link name can be changed to anything you want here! Something related to the
                     content for example.</li>

@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             .content { margin-left: 1.5%; font-size: 12pt; margin-right: 1.5%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
             a { padding: 1px 3px 1px 3px; }
@@ -13,19 +14,20 @@
             .descCol { width: 16%; }
             .linksCol { width: 28%; font-family: Menlo, 'Courier New', Courier, monospace; font-size: 11pt;}
             .smaller { font-size: 11pt; }
+            .tableHeading { font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 13pt; }
         </style>
     </head>
     <body>
-        <div class=content>
+        <div class="content container" style="max-width:100%;">
             <h2>Test Links</h2>
             <p>The behaviours for each type of link are given in the Deep Linking document.</p>
-            <table width=100%>
+            <table width=100% class=table>
                 <thead>
                     <tr>
-                        <th class=descCol>Description</th>
-                        <th class=linksCol>Universal Link</th>
-                        <th class=linksCol style="text-align:center;">Branch Link</th>
-                        <th class=linksCol style="text-align:center;">Custom Scheme</th>
+                        <th class="descCol tableHeading">Description</th>
+                        <th class="linksCol tableHeading">Universal Link</th>
+                        <th class="linksCol tableHeading">Branch Link</th>
+                        <th class="linksCol tableHeading">Custom Scheme</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,49 +46,49 @@
                     <tr>
                         <td class="descCol smaller">Open to a beat that doesn't exist</td>
                         <td class="linksCol"><a href="https://www.lyfapp.com/beat?id=12384646544">https://www.lyfapp.com/beat?id=12384646544</a></td>
-                        <td class="linksCol"><a href="https://lyfapp.app.link/beat_does_not_exist">https://lyfapp.app.link/beat_does_not_exist</a></td>
+                        <td class="linksCol"><a href="https://lyfapp.test-app.link/open_beat_that_does_not_exist">https://lyfapp.test-app.link/open_beat_that_does_not_exist</a></td>
                         <td class="linksCol"><a href="lyfapp://li.nk/beat?id=12384646544">lyfapp://li.nk/beat?id=312384646544</a></td>
                     </tr>
                     <tr>
                         <td class="descCol smaller">Open beat "Losing Ain't Easy" to a post that doesn't exist</td>
                         <td class="linksCol"><a href="https://www.lyfapp.com/beat?id=32930&post=76855335189654">https://www.lyfapp.com/beat?id=32930&post=76855335189654</a></td>
-                        <td class="linksCol"><a href="https://lyfapp.app.link/beat_32930_post_does_not_exist">https://lyfapp.app.link/beat_32930_post_does_not_exist</a></td>
+                        <td class="linksCol"><a href="https://lyfapp.test-app.link/open_32930beat_to_post_does_not_exist">https://lyfapp.test-app.link/open_32930beat_to_post_does_not_exist</a></td>
                         <td class="linksCol"><a href="lyfapp://li.nk/beat?id=32930&post=76855335189654">lyfapp://li.nk/beat?id=32930&post=76855335189654</a></td>
                     </tr>
                     <tr>
                         <td class="descCol smaller">Open with <code>all</code> filter</td>
                         <td class="linksCol"><a href="https://www.lyfapp.com/filter?filter=all">https://www.lyfapp.com/filter?filter=all</a></td>
-                        <td class="linksCol"><a href="https://lyfapp.app.link/open_with_all_filter">https://lyfapp.app.link/open_with_all_filter</a></td>
+                        <td class="linksCol"><a href="https://lyfapp.test-app.link/open_all_filter">https://lyfapp.test-app.link/open_all_filter</a></td>
                         <td class="linksCol"><a href="lyfapp://li.nk/filter?filter=all">lyfapp://li.nk/filter?filter=all</a></td>
                     </tr>
                     <tr>
                         <td class="descCol smaller">Open with <code>following</code> filter</td>
                         <td class="linksCol"><a href="https://www.lyfapp.com/filter?filter=following">https://www.lyfapp.com/filter?filter=following</a></td>
-                        <td class="linksCol"><a href="https://lyfapp.app.link/open_with_following_filter">https://lyfapp.app.link/open_with_following_filter</a></td>
+                        <td class="linksCol"><a href="https://lyfapp.test-app.link/open_following_filter">https://lyfapp.test-app.link/open_following_filter</a></td>
                         <td class="linksCol"><a href="lyfapp://li.nk/filter?filter=following">lyfapp://li.nk/filter?filter=following</a></td>
                     </tr>
                     <tr>
                         <td class="descCol smaller">Open with <code>new</code> filter</td>
                         <td class="linksCol"><a href="https://www.lyfapp.com/filter?filter=new">https://www.lyfapp.com/filter?filter=new</a></td>
-                        <td class="linksCol"><a href="https://lyfapp.app.link/open_with_new_filter">https://lyfapp.app.link/open_with_new_filter</a></td>
+                        <td class="linksCol"><a href="https://lyfapp.test-app.link/open_new_filter">https://lyfapp.test-app.link/open_new_filter</a></td>
                         <td class="linksCol"><a href="lyfapp://li.nk/filter?filter=new">lyfapp://li.nk/filter?filter=new</a></td>
                     </tr>
                     <tr>
                         <td class="descCol smaller">Open with <code>welcome</code> filter.<br/>This filter doesn't exist in current build</td>
                         <td class="linksCol"><a href="https://www.lyfapp.com/filter?filter=welcome">https://www.lyfapp.com/filter?filter=welcome</a></td>
-                        <td class="linksCol"><a href="https://lyfapp.app.link/open_welcome_filter">https://lyfapp.app.link/open_welcome_filter</a></td>
+                        <td class="linksCol"><a href="https://lyfapp.test-app.link/open_welcome_filter">https://lyfapp.test-app.link/open_welcome_filter</a></td>
                         <td class="linksCol"><a href="lyfapp://li.nk/filter?filter=welcome">lyfapp://li.nk/filter?filter=welcome</a></td>
                     </tr>
                     <tr>
                         <td class="descCol smaller">Open with <code>relationships</code> category filter</td>
                         <td class="linksCol"><a href="https://www.lyfapp.com/filter?filter=categories&category=relationships">https://www.lyfapp.com/filter?filter=categories&category=relationships</a></td>
-                        <td class="linksCol"><a href="https://lyfapp.app.link/open_relationships_category_filter">https://lyfapp.app.link/open_relationships_category_filter</a></td>
+                        <td class="linksCol"><a href="https://lyfapp.test-app.link/open_relationships_category">https://lyfapp.test-app.link/open_relationships_category</a></td>
                         <td class="linksCol"><a href="lyfapp://li.nk/filter?filter=categories&category=relationships">lyfapp://li.nk/filter?filter=categories&category=relationships</a></td>
                     </tr>
                     <tr>
                         <td class="descCol smaller">Open with category filter that doesn't exist</td>
                         <td class="linksCol"><a href="https://www.lyfapp.com/filter?filter=categories&category=nonexistant">https://www.lyfapp.com/filter?filter=categories&category=nonexistant</a></td>
-                        <td class="linksCol"><a href="https://lyfapp.app.link/open_category_does_not_exist">https://lyfapp.app.link/open_category_does_not_exist</a></td>
+                        <td class="linksCol"><a href="https://lyfapp.test-app.link/open_categoryfilter_that_doesnot_exist">https://lyfapp.test-app.link/open_categoryfilter_that_doesnot_exist</a></td>
                         <td class="linksCol"><a href="lyfapp://li.nk/filter?filter=categories&category=nonexistant">lyfapp://li.nk/filter?filter=categories&category=nonexistant</a></td>
                     </tr>
                 </tbody>
