@@ -97,16 +97,19 @@
             <ul>
                 <li><code>beat</code></li>
                 <li><code>filter</code></li>
+                <li><code>lyfsupport</code></li>
             </ul>
             <h3 id="parameters-">Parameters:</h3>
             <ul>
-                <li>For a <strong><code>BEAT</code></strong> link:<ul>
+                <li style="margin-bottom: 12px">
+                	<p style="margin-bottom: 0">For a <strong><code>BEAT</code></strong> link:</p>
+                	<ul>
                         <li>Must specify the JourneyId with <code>id={journeyIdNumber}</code></li>
                         <li>Can optionally specify a starting post with <code>post={postNumber}</code></li>
                     </ul>
                 </li>
-                <li>
-                    <p>For a <strong><code>FILTER</code></strong> link:
+                <li style="margin-bottom: 12px">
+                    <p style="margin-bottom: 0">For a <strong><code>FILTER</code></strong> link:<br/>
                         Must specify the filter type with <code>filter=</code>. Possible values are:</p>
                     <ul>
                         <li><code>filter=all</code></li>
@@ -115,6 +118,10 @@
                         <li><code>filter=welcome</code></li>
                         <li><code>filter=categories</code></li>
                     </ul>
+                </li>
+                <li style="margin-bottom: 12px">
+                	<p style="margin-bottom:0">For a <strong><code>LYFSUPPORT</code></strong> link:</p>
+                	<p style="margin-top: 0;margin-left: 16px">No parameters required</p>
                 </li>
             </ul>
             <p>If it’s a <code>categories</code> filter, a second parameter must specify the category name with
@@ -186,8 +193,12 @@
                     </tr>
                     <tr>
                         <td>Select category filter that does not exist</td>
-                        <td><a
-                                href="http://www.lyfapp.com/filter?filter=categories&amp;category=nonexistant">www.lyfapp.com/filter?filter=categories&amp;category=nonexistant</a>
+                        <td><a href="http://www.lyfapp.com/filter?filter=categories&amp;category=nonexistant">www.lyfapp.com/filter?filter=categories&amp;category=nonexistant</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Open Lyf Support controller</td>
+                        <td><a href="http://www.lyfapp.com/lyfsupport">www.lyfapp.com/lyfsupport</a>
                         </td>
                     </tr>
                 </tbody>
