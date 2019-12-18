@@ -34,6 +34,8 @@
             .optionalVar { background-color: #d5d5ef; color: #9a9aff; }
             img { width: 80%; margin-left: auto; margin-right: auto; }
             .strong { font-weight: bold; }
+            .gridTable { border: 1px solid #444; text-align: center; }
+            .monoSpaced { font-family: monospace; }
         </style>
     </head>
     <body>
@@ -144,6 +146,71 @@
                     <li><code>&nbsp;</code> (space) ==> <code>%20</code></li>
                     <li><code>&</code> ==> <code>%26</code></li>
                 </ul>
+                More encodings:
+                <table style="margin-bottom: 12px;">
+                    <tr class="gridTable">
+                        <td class="gridTable"><code>&nbsp;</code></td>
+                        <td class="gridTable"><code>!</code></td>
+                        <td class="gridTable"><code>"</code></td>
+                        <td class="gridTable"><code>#</code></td>
+                        <td class="gridTable"><code>$</code></td>
+                        <td class="gridTable"><code>%</code></td>
+                        <td class="gridTable"><code>&</code></td>
+                        <td class="gridTable"><code>'</code></td>
+                        <td class="gridTable"><code>(</code></td>
+                        <td class="gridTable"><code>)</code></td>
+                        <td class="gridTable"><code>*</code></td>
+                        <td class="gridTable"><code>+</code></td>
+                        <td class="gridTable"><code>,</code></td>
+                        <td class="gridTable"><code>-</code></td>
+                        <td class="gridTable"><code>.</code></td>
+                        <td class="gridTable"><code>/</code></td>
+                        <td class="gridTable"><code>:</code></td>
+                        <td class="gridTable"><code>;</code></td>
+                        <td class="gridTable"><code><</code></td>
+                        <td class="gridTable"><code>=</code></td>
+                        <td class="gridTable"><code>></code></td>
+                        <td class="gridTable"><code>?</code></td>
+                        <td class="gridTable"><code>@</code></td>
+                        <td class="gridTable"><code>[</code></td>
+                        <td class="gridTable"><code>\</code></td>
+                        <td class="gridTable"><code>]</code></td>
+                        <td class="gridTable"><code>^</code></td>
+                        <td class="gridTable"><code>_</code></td>
+                        <td class="gridTable"><code>`</code></td>
+                    </tr>
+                    <tr class="gridTable monoSpaced">
+                        <td class="gridTable">%20</td>
+                        <td class="gridTable">%21</td>
+                        <td class="gridTable">%22</td>
+                        <td class="gridTable">%23</td>
+                        <td class="gridTable">%24</td>
+                        <td class="gridTable">%25</td>
+                        <td class="gridTable">%26</td>
+                        <td class="gridTable">%27</td>
+                        <td class="gridTable">%28</td>
+                        <td class="gridTable">%29</td>
+                        <td class="gridTable">%2A</td>
+                        <td class="gridTable">%2B</td>
+                        <td class="gridTable">%2C</td>
+                        <td class="gridTable">%2D</td>
+                        <td class="gridTable">%2E</td>
+                        <td class="gridTable">%2F</td>
+                        <td class="gridTable">%3A</td>
+                        <td class="gridTable">%3B</td>
+                        <td class="gridTable">%3C</td>
+                        <td class="gridTable">%3D</td>
+                        <td class="gridTable">%3E</td>
+                        <td class="gridTable">%3F</td>
+                        <td class="gridTable">%40</td>
+                        <td class="gridTable">%5B</td>
+                        <td class="gridTable">%5C</td>
+                        <td class="gridTable">%5D</td>
+                        <td class="gridTable">%5E</td>
+                        <td class="gridTable">%5F</td>
+                        <td class="gridTable">%60</td>
+                    </tr>
+                </table>
                 <p>For example, the category <code>healthy living & wellness</code> will be URI encoded to <code>healthy%20living%20%26%20wellness</code> </p>
                 <p>A website like <a href="https://meyerweb.com/eric/tools/dencoder/">this</a> can be used to help encode the category name.</p>
             </div>
