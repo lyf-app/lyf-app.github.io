@@ -137,6 +137,16 @@
             <p>The category name must be an exact match to one of the categories listed in the app (but lowercase).</p>
             <p><img src="assets/categories.png" alt="categories.png"></p>
             <p>For example, <code>relationships</code> is correct, but <code>relationship</code> will not work</p>
+            <div style="margin-left:12px; border: 1px solid black; border-radius: 6px; padding-left: 18px; padding-right: 12px; padding-top: 12px; margin-bottom: 12px;">
+                <p>If there are spaces, ampersands or other special characters that cannot be represented in a URL, these will need to be <em>URI Encoded</em>.</p>
+                <p>This means that special characters are changed to a <code>%</code> followed by a code number, for example:
+                <ul>
+                    <li><code>&nbsp;</code> (space) ==> <code>%20</code></li>
+                    <li><code>&</code> ==> <code>%26</code></li>
+                </ul>
+                <p>For example, the category <code>healthy living & wellness</code> will be URI encoded to <code>healthy%20living%20%26%20wellness</code> </p>
+                <p>A website like <a href="https://meyerweb.com/eric/tools/dencoder/">this</a> can be used to help encode the category name.</p>
+            </div>
             <h3 id="putting-it-together">Putting it together</h3>
             <p><a href="https://launchschool.com/books/http/read/what_is_a_url#querystringsparameters">Putting parameters
                     together</a> -- Parameters start with a &#39;<code>?</code>&#39;. Multiple parameters are seperated by an
