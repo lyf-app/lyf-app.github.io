@@ -34,7 +34,7 @@
             .optionalVar { background-color: #d5d5ef; color: #9a9aff; }
             img { width: 80%; margin-left: auto; margin-right: auto; }
             .strong { font-weight: bold; }
-            .gridTable { border: 1px solid #444; text-align: center; padding: 2px; }
+            .gridTable { border: 1px solid #444; text-align: center; padding: 6px 4px; }
             .monoSpaced { font-family: monospace; background-color: #f6f6f6; color: #444; border-radius: 4px; border: 1px solid #ccc; 
                 margin-left: 3px; margin-top: 6px; margin-right: 3px; margin-bottom: 6px; padding: 1px 3px 1px 3px; }
         </style>
@@ -144,12 +144,12 @@
                 <p><span style="font-size: x-large; font-weight: bold; color: #777;">N.B.</span> If there are spaces, ampersands or other special characters that cannot be represented in a URL, these will need to be <a href="https://en.wikipedia.org/wiki/Percent-encoding"><em>URI Precent Encoded</em></a>.</p>
                 <p>This means that special characters are changed to a <code>%</code> followed by a code number, for example:
                 <ul>
-                    <li><code>&nbsp;</code> (space) ==> <code>%20</code></li>
-                    <li><code>&</code> ==> <code>%26</code></li>
+                    <li><code>&nbsp;</code> (space) ==> <span class="monoSpaced">%20</span></li>
+                    <li><code>&</code> ==> <span class="monoSpaced">%26</span></li>
                 </ul>
                 More encodings:
                 <table style="margin-bottom: 12px;">
-                    <tr class="gridTable">
+                    <tr>
                         <td class="gridTable"><code>&nbsp;</code></td>
                         <td class="gridTable"><code>!</code></td>
                         <td class="gridTable"><code>"</code></td>
@@ -166,7 +166,7 @@
                         <td class="gridTable"><code>-</code></td>
                         <td class="gridTable"><code>.</code></td>
                     </tr>
-                    <tr class="gridTable">
+                    <tr>
                         <td class="gridTable"><span class="monoSpaced">%20</span></td>
                         <td class="gridTable"><span class="monoSpaced">%21</span></td>
                         <td class="gridTable"><span class="monoSpaced">%22</span></td>
