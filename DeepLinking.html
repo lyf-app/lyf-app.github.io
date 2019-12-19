@@ -29,13 +29,14 @@
             h1 { padding-left: 4%; margin-top: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 48pt; }
             h2 { padding-left: 1.5%; margin-top: 32px; margin-right: 40%; border-bottom: 1px solid #ddd; margin-bottom: 32px; }
             .strike { text-decoration: line-through; color: #e33; }
-            code { background-color: #fdd; color: #e33; border-radius: 4px; padding: 1px 3px 1px 3px; }
+            code { background-color: #fdd; color: #c22; border-radius: 4px; padding: 1px 3px 1px 3px; }
             .variable { background-color: #cce; color: #33f; }
             .optionalVar { background-color: #d5d5ef; color: #9a9aff; }
             img { width: 80%; margin-left: auto; margin-right: auto; }
             .strong { font-weight: bold; }
-            .gridTable { border: 1px solid #444; text-align: center; }
-            .monoSpaced { font-family: monospace; }
+            .gridTable { border: 1px solid #444; text-align: center; padding: 2px; }
+            .monoSpaced { font-family: monospace; background-color: #f6f6f6; color: #444; border-radius: 4px; border: 1px solid #ccc; 
+                margin-left: 3px; margin-top: 6px; margin-right: 3px; margin-bottom: 6px; padding: 1px 3px 1px 3px; }
         </style>
     </head>
     <body>
@@ -164,6 +165,27 @@
                         <td class="gridTable"><code>,</code></td>
                         <td class="gridTable"><code>-</code></td>
                         <td class="gridTable"><code>.</code></td>
+                    </tr>
+                    <tr class="gridTable">
+                        <td class="gridTable"><span class="monoSpaced">%20</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%21</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%22</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%23</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%24</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%25</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%26</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%27</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%28</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%29</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%2A</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%2B</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%2C</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%2D</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%2E</span></td>
+                    </tr>
+                </table>
+                <table style="margin-bottom: 12px;">
+                    <tr class="gridTable">
                         <td class="gridTable"><code>/</code></td>
                         <td class="gridTable"><code>:</code></td>
                         <td class="gridTable"><code>;</code></td>
@@ -179,36 +201,21 @@
                         <td class="gridTable"><code>_</code></td>
                         <td class="gridTable"><code>`</code></td>
                     </tr>
-                    <tr class="gridTable monoSpaced">
-                        <td class="gridTable">%20</td>
-                        <td class="gridTable">%21</td>
-                        <td class="gridTable">%22</td>
-                        <td class="gridTable">%23</td>
-                        <td class="gridTable">%24</td>
-                        <td class="gridTable">%25</td>
-                        <td class="gridTable">%26</td>
-                        <td class="gridTable">%27</td>
-                        <td class="gridTable">%28</td>
-                        <td class="gridTable">%29</td>
-                        <td class="gridTable">%2A</td>
-                        <td class="gridTable">%2B</td>
-                        <td class="gridTable">%2C</td>
-                        <td class="gridTable">%2D</td>
-                        <td class="gridTable">%2E</td>
-                        <td class="gridTable">%2F</td>
-                        <td class="gridTable">%3A</td>
-                        <td class="gridTable">%3B</td>
-                        <td class="gridTable">%3C</td>
-                        <td class="gridTable">%3D</td>
-                        <td class="gridTable">%3E</td>
-                        <td class="gridTable">%3F</td>
-                        <td class="gridTable">%40</td>
-                        <td class="gridTable">%5B</td>
-                        <td class="gridTable">%5C</td>
-                        <td class="gridTable">%5D</td>
-                        <td class="gridTable">%5E</td>
-                        <td class="gridTable">%5F</td>
-                        <td class="gridTable">%60</td>
+                    <tr class="gridTable">
+                        <td class="gridTable"><span class="monoSpaced">%2F</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%3A</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%3B</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%3C</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%3D</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%3E</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%3F</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%40</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%5B</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%5C</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%5D</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%5E</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%5F</span></td>
+                        <td class="gridTable"><span class="monoSpaced">%60</span></td>
                     </tr>
                 </table>
                 <p>For example, the category <code>healthy living & wellness</code> will be URI encoded to <code>healthy%20living%20%26%20wellness</code> </p>
