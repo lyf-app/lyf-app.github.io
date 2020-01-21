@@ -254,9 +254,21 @@
                     <p class="">If we’re being honest, some days can feel like a struggle. Whether you’re battling social anxiety, or simply looking for some easy ways to be more mindful, the Lyf community is here to support you throughout your journey.</p>
                 </div>
                 <div class="col-md-7">
+                    <!-- https://css-tricks.com/lazy-load-embedded-youtube-videos/ -->
+                    <!-- TODO: Update img with a better, hosted screen-shot -->
                     <div class="video-wrapper">
-                        <iframe width="854" height="480" src="https://www.youtube.com/embed/YzR-rzNRD6g?wmode=opaque&enablejsapi=1&color=white&modestbranding=1" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="854" height="480" style="background-color: white;" src="https://www.youtube.com/embed/YzR-rzNRD6g?wmode=opaque&color=white" srcdoc="<style>*{padding:0;margin:0;overflow:hidden;}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+                                <a href=https://www.youtube.com/embed/YzR-rzNRD6g?autoplay=1>
+                                    <img src='img/youtube-preview.jpg' alt='Lyf App'>
+                                    <span>▶</span>
+                                </a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Lyf App">
+                        </iframe>
                     </div>
+
+                    <!-- Original -->
+                    <!-- <div class="video-wrapper">
+                        <iframe width="854" height="480" src="https://www.youtube.com/embed/YzR-rzNRD6g?wmode=opaque&enablejsapi=1&color=white&modestbranding=1" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -278,19 +290,19 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3 class="section-subheading">Think Lyf is just your average self-care app? False, my friend. It’s so much more than an app - it’s a community.</h3>
-                    <img class="img-fluid" src="img/get-most1.png"></img>
+                    <img class="img-fluid" src="img/get-most1.jpg"></img>
                     <p>It’s a community filled with people just like you. There are community members exploring the world of meditation, mindfulness, and healthy living. There are also members working through trauma or professional challenges. What we’re
                         trying to say is that there’s a place for everyone in the Lyf app.</p>
                 </div>
                 <div class="col-md-4">
                     <h3 class="section-subheading">Getting started is super easy. So easy, you’ll wonder why you didn’t try it before.</h3>
-                    <img class="img-fluid" src="img/get-most2.png"></img>
+                    <img class="img-fluid" src="img/get-most2.jpg"></img>
                     <p>Within the app, each member creates an account and chooses specific interests, or as we like to call them, beats. Maybe you made a New Year’s resolution to get fit or be more mindful. There’s a Lyf beat for that. Working through divorce
                         or insomnia? There’s a beat for that, too. Start by exploring the many different community beats. If you can think it, there’s probably a beat for it.</p>
                 </div>
                 <div class="col-md-4">
                     <h3 class="section-subheading">Lyf is like a journey (pun intended). In the Lyf app, you will meet new people and discover new friends.</h3>
-                    <img class="img-fluid" src="img/get-most3.png"></img>
+                    <img class="img-fluid" src="img/get-most3.jpg"></img>
                     <p>If you’re ready to dive right in, try writing your own beat. You never know who you might help encourage by sharing your own personal story. You can add people to your friends list and follow their beats to support them like they support
                         you. Hey, maybe you’ll find that helping others is an important part of your journey - it wouldn’t be the first time!</p>
                 </div>
@@ -350,7 +362,7 @@
             </div>
             <div class="row tesselated">
                 <div class="col-md-7" id="iphone-watch">
-                    <img class="img-fluid" src="img/support.png" />
+                    <img class="img-fluid" src="img/support.jpg" />
                 </div>
                 <div class="col-md-5 my-auto">
                     <h3>Licensed Professionals</h3>
@@ -365,12 +377,12 @@
                     <p>It’s nobody’s business but your own. Your one-on-one chats are always private and secure. The world can keep their nose out of it. You decide what you want to share.</p>
                 </div>
                 <div class="col-md-7">
-                    <img class="img-fluid" src="img/chat.png" />
+                    <img class="img-fluid" src="img/chat.jpg" />
                 </div>
             </div>
             <div class="row tesselated">
                 <div class="col-md-7">
-                    <img class="img-fluid" src="img/no-scamming.png" />
+                    <img class="img-fluid" src="img/no-scamming.jpg" />
                 </div>
                 <div class="col-md-5 my-auto">
                     <h3>No scamming, no selling.</h3>
@@ -509,9 +521,8 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- Youtube -->
+    <script src="js/youtube.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/lyfapp.min.js"></script>
