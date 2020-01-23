@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="Lyf is a new social media app where users share aspects of themselves previously considered too personal for social media." name="description">
+    <meta property="al:ios:app_store_id" content="909556526" />
+    <meta property="al:ios:app_name" content="Incogo" />
+    <meta property="og:title" content="Lyf iOS Deep Link" />
+    <meta property="og:type" content="website" />
+    <meta property="al:web:url" content="https://www.lyfapp.com" />
+    <script type="text/javascript">
+        (function(d) {
+            var config = {
+                    kitId: 'pit4htm',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded")
+                    return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+        window.onunload = function() {};
+    </script>
+    <meta property="og:title" content="Lyf. Your journey starts here." />
+    <meta property="og:url" content="https://www.lyfapp.com" />
+    <meta property="og:image" content="https://d1jqemu0j70f8g.cloudfront.net/platform_static_content/facebook_metatag-new.jpg" />
+    <meta property="og:site" content="Lyf" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Lyf is a new social media app where users share aspects of themselves previously considered too personal for social media." />
+    <title> lyf </title>
+    <link rel="stylesheet" href="css/legals.min.css" />
+    <script type="text/javascript">
+        var _sf_startpt = (new Date()).getTime()
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-87613228-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- <script src="js/jquery1.11.min.js"></script> -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        var standalone = window.navigator.standalone,
+            userAgent = window.navigator.userAgent.toLowerCase(),
+            safari = /safari/.test(userAgent),
+            ios = /iphone|ipod|ipad/.test(userAgent); //iphone|ipod|
+        if (ios) {
+            if (!standalone && !safari) {
+                $('html').addClass("ios");
+            };
+        };
+    </script>
+    <script type="text/javascript">
+        function blurImage() {
+            $(function() {
+                if ($(".incogo-me-header-img").is(":visible")) {
+                    $(".incogo-me-header-img").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+                if ($(".blur-me-2").is(":visible")) {
+                    $(".blur-me-2").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+                if ($(".member-img-set").is(":visible")) {
+                    $(".member-img-set").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+            });
+
+        }
+    </script>
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="bodywrap" class="body-wrap ">
+        <div id="pageSlide" class="page-wrap-slide">
+            <nav class="navbar nav-mobile navbar-fixed-top mobile-header" style='top:0'>
+                <div class="mobile-nav-wrap">
+                    <a class="back-btn pull-left-mob" href="javascript:window.history.back();"></a>
+                    <h1 class="heading-lg"><a class="scrollToTop" href="javascript:void(0)">Community Guidelines</a></h1>
+                </div>
+            </nav>
+            <!--incogo-me-container-->
+            <div class="container-fluid incogo-me-container mobile-w-2 legels-pages ">
+                <div class="container">
+                    <div class="row my-content terms-content">
+                        <ul class="terms-menu">
+                            <li><a href="#p1">Introduction</a></li>
+                            <li><a href="#p2">Freedom of speech</a></li>
+                            <li><a href="#p3">Treat others as you would have others treat you</a></li>
+                            <li><a href="#p4">Lyf celebrates diversity of opinion</a></li>
+                            <li><a href="#p5">Inappropriate content</a></li>
+                            <li><a href="#p6">Bullying</a></li>
+                            <li><a href="#p7">Respect other people’s private information</a></li>
+                            <li><a href="#p8">Respect copyright</a></li>
+                            <li><a href="#p9">Please do not impersonate others</a></li>
+                            <li><a href="#p16">Lyf isn’t a dating app</a></li>
+                            <li><a href="#p10">We hate spam as much as you do</a></li>
+                            <li><a href="#p11">Covert product placement advertising</a></li>
+                            <li><a href="#p16">Support vs “Support”</a></li>
+                            <li><a href="#p12">Respect our servers</a></li>
+                            <li><a href="#p13">Removal of content</a></li>
+                            <li><a href="#p14">If you choose to overlook our guidelines</a></li>
+                            <li><a href="#p15">How to report a violation?</a></li>
+                        </ul>
+                    </div>
+                    <div class="row my-content terms-content">
+                        <div class="terms-txt">
+                            <h3 id="p1">Introduction</h3>
+                            <p>Lyf is a new social media platform where users feel safe to share aspects of themselves previously deemed too personal for social media. Lyf users come from all walks of life and from many different backgrounds and cultures.
+                                For this reason, we treat the conversations people have on lyf, and the beats they make, with the utmost respect. To protect the needs and interests of the wider community, we ask users to adhere to the following guidelines
+                                while expressing themselves on lyf. Please read these guidelines carefully as they will help you to understand the type of content we deem acceptable, the type we consider inappropriate and the type which may be removed
+                                or reported.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p2">Freedom of speech</h3>
+                            <p>Lyf believes in the right for freedom of speech at all times. We encourage our users to express themselves without the fear of censorship. We believe that all opinions are equally valid and encourage users to challenge their
+                                own views and the views of others.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p3">Treat others as you would have others treat you</h3>
+                            <p>Occasionally, on lyf, you may be exposed to an idea or approach to something that was previously unknown to you. Or perhaps it may be something you have considered before but discounted or even disagreed with. In any case,
+                                just as in real life, we ask that all beat-makers be treated with respect.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p4">Lyf celebrates diversity of opinion</h3>
+                            <p>At Lyf, we believe that in our social media lives we should be able to celebrate diversity of opinion the same way we would in our real lives: respectfully. So, if or when you read comments or views which do not resonate with
+                                you, you have the option to click the disagree button which represents the idea of politely agreeing to disagree.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p5">Inappropriate content</h3>
+                            <p>Lyf promotes and seeks to extend the frontiers of communication already opened up by the digital world. However, there is a limit to what will be accepted as appropriate and a limit to what will be tolerated. In the interests
+                                of all users, please do not use lyf to upload content containing full nudity or sexual activity. Please also be aware that we have a strict policy which prohibits the sharing of pornographic content where a minor is involved.
+                                Please do not engage in vitriolic, inflammatory language that hurts or antagonises people. Most of all we do not tolerate hate speech that is directed towards individuals or groups based on their race, religion, ethnicity,
+                                sexual orientation, gender, disability, medical condition or age. Please also do not use lyf to create content that seeks to promote criminal activities or activities that are morally repugnant, for example, animal abuse,
+                                bomb making, arson, or reckless driving. Whilst lyf encourages users to create content for the purposes of exploring personal struggles, lyf does not permit the use of its platform to plan or consider suicide or to promote
+                                harm either to oneself or to others. If a user requires emergency assistance we recommend calling a local suicide prevention service. Beats created with the sole purpose of planning suicide will be removed without notice.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p6">Bullying </h3>
+                            <p>Lyf condemns any act of bullying on its platform. With this in mind, we give you, the user the power to immediately delete comments and/or posts which you deem to be inappropriate on your own beats. You also have the power
+                                to immediately block select users should you deem it necessary. These measures should be sufficient in most cases however, please do not hesitate to report acts of bullying where these measures have been insufficient. We
+                                take the safety of our users very seriously and, as such, promise to respond immediately when possible but always within 24 hours.<br> Lyf considers the act of posting defamatory content about another lyf user on one’s
+                                own beat or creating a beat for the purpose of defaming or making fun of another user to be an act of bullying. Such content will be subject to removal without notice.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p7a">Harassment</h3>
+                            <p>Lyf condemns any act of harassment on its platform. The act of abusing the disagree button by constantly and continually disagreeing with another user as a way of disrespecting the other user as opposed to celebrating diversity
+                                of opinion will be considered to be an act of harassment. Please do not hesitate to report harassment. As with bullying, we promise to respond immediately when possible but always within 24 hours.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p7">Respect other people’s private information</h3>
+                            <p>Unless you have been given permission to do so, please do not post on lyf other people’s private, sensitive or confidential information. This includes, but is not limited to, credit card details, social security numbers, medical
+                                history, passwords, addresses or anything people would regard as personal or private.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p8">Respect copyright</h3>
+                            <p>We recognise the hard work, time, and, in some cases, sacrifice that goes into creating meaningful content. For this reason, when you are using lyf please remember to only upload content you have made yourself or content which
+                                you have been given permission to reproduce. This includes, but is not limited to, segments of copyrighted programs, music tracks, published text, and videos that were made by other people. Correct attribution where appropriate
+                                is necessary.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p9">Please do not impersonate others</h3>
+                            <p>Acting is a noble pursuit (and we encourage you take it up) but we realise that some sorts of acting can harm others. Please do not use lyf as a means to impersonate others in such a way that misleads, exploits or deceives
+                                for your own gain. The act of catfishing, whether for emotional, intellectual, physical or financial reasons, will not be tolerated, and will result in immediate blocking.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p16">Lyf isn’t a dating app</h3>
+                            <p>Whilst we realise that friendship can evolve into something more, please respect that lyf is not a dating app and was not created for the purposes of seeking romance/dating/sexting opportunities. If you engage with others purely
+                                for this purpose and it is not reciprocated, you will be subject to a warning and possible account removal without notice.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p10">We hate spam as much as you do</h3>
+                            <p>Lyf wants people to engage in meaningful beats. For this reason we do not like users posting content which is only there to increase views, such as untargeted, irrelevant, and repetitive content. Memes may convey how you feel
+                                but using your words will always provoke a better response.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p11">Covert product placement advertising</h3>
+                            <p>In the interests of keeping it real, we ask users to refrain from engaging in covert native advertising or blatant sponsored product placement on lyf. E.g. a fitspo model wearing @promoted active wear, drinking @promoted protein
+                                shake wearing @promoted athletic shoes. Such posts will be treated as spam.<br/>Similarly, the advertising of other accounts on alternative social media platforms will be removed instantly. This is for the safety and security
+                                of our userbase and to maintain the purity and integrity of our facility.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p16">Support vs “Support”</h3>
+                            <p>Lyf is here for you to explore your thoughts and feelings, to express yourself freely in whatever way you need. The requests for financial support or links to such needs will result in deleting of posts and possible further
+                                action.
+                            </p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p12">Respect our servers</h3>
+                            <p>Like you, our servers enjoy their privacy. Please do not attempt to disrupt or exploit lyfapp.com, or the services, products and resources we provide you.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p13">Removal of content</h3>
+                            <p>Despite our reluctance to impose any form of censorship, in extreme circumstances we do remove content we deem to be threatening, antagonistic, or having the potential to escalate into acts of violence in real life. We do not
+                                allow organisations that have a record of criminal or terrorist activity to hold an account with us, and we forbid users to endorse or celebrate actions that harm, or have the potential to harm, others in a financial sense.
+                                If users engage in any of these activities, and we deem them serious enough, we may take matters further and involve the appropriate authorities.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p14">If you choose to overlook our guidelines</h3>
+                            <p>We apologise if our guidelines sound harsh or inflexible, but we figure they are the best way to ensure a meaningful and equal experience for all concerned. In the event you choose to overlook these guidelines, intentionally
+                                or by accident, you may be issued with a warning from our administrators. If your behaviour is deemed to be seriously offensive, your account will be removed and you will be prohibited from creating any new accounts.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="p15">How to report a violation?</h3>
+                            <p>In the event you come across something you think violates our guidelines, it would be great if you could report it to us. This is done by tapping on the three dots, found for every post, beat, user and chat. Supplying us with
+                                a reason and/or evidence goes a long way to accelerate the process.However, before doing so, please be sure to read over our guidelines again and consider getting a second opinion on the content before you contact us. Please
+                                remember that reporting a piece of content you deem offensive, or which you feel may be out of keeping with our guidelines, does not automatically mean the content will be removed. You have the option to delete content
+                                posted by others to your beats.<br/>To report abuse, you may also email <a href="mailto:community@lyfapp.com.au">community@lyfapp.com.au</a>. All reports of abuse of lyf’s Terms, Policies or Guidelines will be reviewed
+                                by our mediators within 24 hours of the report being made, and further action will be taken based on each individual circumstance. Users who post content deemed to be offensive or in violation of lyf’s Terms, Policies or
+                                Guidelines may have their membership suspended or terminated. Offensive content will be removed from the site.</p>
+                        </div>
+                    </div>
+                </div>
+                <a id="hitmeup" class="back-to-top" href="javascript:void(0);" style="display:none;"></a>
+            </div>
+            <!--Lyf-me-container-->
+            <!--incogo-me-container-->
+            <style type="text/css">
+                @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+                @font-face {
+                    font-family: 'myriadpro';
+                    src: url(fonts/myriadpro.eot);
+                    src: local('myriadpro'), url(fonts/myriadpro.woff) format('woff'), url(fonts/myriadpro.ttf) format('truetype');
+                }
+                
+                @font-face {
+                    font-family: 'MyriadProLight';
+                    src: url(fonts/myriadpro-light-webfont.eot);
+                    src: url(fonts/myriadpro-light-webfont.eot?#iefix) format('embedded-opentype'), url(fonts/myriadpro-light-webfont.woff) format('woff'), url(fonts/myriadpro-light-webfont.ttf) format('truetype'), url(fonts/myriadpro-light-webfont.svg#MyriadProLight) format('svg');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                
+                @font-face {
+                    font-family: 'MyriadPro-Bold';
+                    src: url(fonts/MyriadPro-Bold.eot);
+                    src: url(fonts/MyriadPro-Bold.woff2) format('woff2'), url(fonts/MyriadPro-Bold.woff) format('woff'), url(fonts/MyriadPro-Bold.ttf) format('truetype'), url(fonts/MyriadPro-Bold.svg#MyriadPro-Bold) format('svg'), url(fonts/MyriadPro-Bold.eot?#iefix) format('embedded-opentype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                
+                footer .menu {
+                    bottom: 0px;
+                    left: 0%;
+                    background-color: #fff;
+                    width: 100%;
+                    z-index: 3;
+                    margin: 0;
+                    padding: 0;
+                    height: 80px;
+                }
+                
+                footer .menu ul {
+                    width: 100%;
+                    text-align: center;
+                    list-style: none;
+                    margin: 0;
+                    max-width: 350px;
+                    padding: 0;
+                    margin: auto;
+                }
+                
+                footer .menu ul li {
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+                
+                footer .menu>ul>li>a {
+                    font-family: 'MyriadPro-Bold';
+                    color: #383838;
+                    font-size: 16px;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+                
+                footer .menu a:hover {
+                    text-decoration: underline;
+                }
+                
+                footer .menu ul li.active a {
+                    /*	text-decoration:underline;*/
+                    color: #1fc49b;
+                }
+                
+                footer .menu>ul>li:last-child {
+                    color: #1fc49b;
+                    font-family: 'MyriadPro-Bold';
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    line-height: 1.5;
+                    font-weight: normal;
+                    margin-top: 0;
+                    position: relative;
+                    top: -15px;
+                }
+                
+                footer .menu.menu-fix>ul>li:last-child {
+                    width: 100%;
+                    line-height: 30px;
+                }
+                
+                footer .menu.menu-fix .sub-menu {
+                    left: -170px;
+                    bottom: 60px;
+                }
+                
+                footer .menu.menu-fix .sub-menu::after {
+                    left: auto;
+                    right: 13px;
+                }
+                
+                .has-sub {
+                    position: relative;
+                }
+                
+                .sub-menu {
+                    position: absolute;
+                    background: #383838;
+                    width: 224px !important;
+                    bottom: 80px;
+                    left: 0;
+                    padding: 0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    display: none;
+                }
+                
+                .has-sub:hover .sub-menu {
+                    display: block;
+                }
+                
+                .sub-menu:before {
+                    content: "";
+                    width: 50px;
+                    height: 20px;
+                    position: absolute;
+                    bottom: -20px;
+                    left: 0px;
+                }
+                
+                .sub-menu:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-right: solid transparent 11px;
+                    border-left: solid transparent 11px;
+                    border-top: solid #383838 12px;
+                    position: absolute;
+                    bottom: -12px;
+                    left: 13px;
+                }
+                
+                .sub-menu li {
+                    width: 100%;
+                    padding: 0;
+                    line-height: 36px;
+                    text-align: left;
+                }
+                
+                .sub-menu li a {
+                    display: block;
+                    width: 100%;
+                    color: #fff !important;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 0 20px;
+                    text-transform: none !important;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    font-family: 'MyriadPro-Bold';
+                }
+            </style>
+            <footer>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Lyf Squad</a></li>
+                        <li class="active has-sub">
+                            <a href="javascript:void(0)">Legals</a>
+                            <ul class="sub-menu">
+                                <li class=""><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li class=""><a href="terms.html">Terms of Service</a></li>
+                                <li class="active"><a href="community-guidelines.html">Community Guidelines</a></li>
+                            </ul>
+                        </li>
+                        <li>&copy; 2020 lyf app pty ltd</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <script>
+                $(function() {
+                    triggerGa('Lyf user', 'click', 'Community guideline');
+                });
+            </script>
+        </div>
+        <script>
+            var BASEPATH = 'https://www.lyfapp.com/'
+            BASEPATH = BASEPATH.replace('http:', '');
+        </script>
+        <!-- <script src="/js/bootstrap311.min.js"></script> -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- <script type="text/javascript">
+            jwplayer.key = "x5a12vINibQfekVBqzausGb0JCAtgVwbzEuLXw==";
+        </script> -->
+        <script type="text/javascript">
+            scrollContentLoader("#loader_anim");
+            var parseQueryString = function() {
+                var str = window.location.search;
+                var objURL = {};
+                str.replace(
+                    new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+                    function($0, $1, $2, $3) {
+                        objURL[$1] = $3;
+                    }
+                );
+                return objURL;
+            };
+            $(document).ready(function() {
+                track_load = parseInt($("#current_page").val()) + 1;; //total loaded record group(s)
+                var loading = false; //to prevents multipal ajax loads
+                total_groups = $("#pageCount").val(); //total record group(s)
+                $(window).scroll(function() { //detect page scroll
+                    var totalScroll = parseInt(document.documentElement.clientHeight + $(document).scrollTop());
+                    if (totalScroll >= $(document).height()) //user scrolled to bottom of the page?
+                    {
+                        if ($("#scroll_type").length && $("#scroll_type").val() == 'static') {
+                            return false;
+                        }
+                        if (track_load < total_groups && loading == false) //there's more data to load
+                        {
+                            //$(".acpaging").last().attr('data-page-ref');
+                            var lastId = getListId(".acpaging", "last");
+                            //console.log(lastId);
+                            loading = true; //prevent further ajax loading
+                            $('.animation_image').show(); //show loading image
+                            //load data from the server using a HTTP POST request
+                            var url = BASEPATH + 'member/' + $("#ajaxSrc").val() + '/' + track_load + '?pagingCursor=' + lastId;
+                            $.post(url, {
+                                search: $("#txtSearch").val()
+                            }, function(data) {
+                                $("#contentDump").append(data); //append received data into the element
+                                //hide loading image
+                                $('.animation_image').hide(); //hide loading image once data is received
+                                track_load++; //loaded group increment
+                                loading = false;
+                            }).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
+                                $('.animation_image').hide(); //hide loading image
+                                loading = false;
+                            });
+                        }
+                    }
+                });
+            });
+
+            function getListId(cls, index, container) {
+                var id = null;
+                if (index == 'last') {
+                    id = $(cls).last().attr('data-page-ref');
+                } else if (index == 'first') {
+                    id = $(cls).first().attr('data-page-ref');
+                }
+                return id;
+            }
+        </script>
+</body>
+
+</html>

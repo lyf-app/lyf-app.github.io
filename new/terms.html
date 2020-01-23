@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="Lyf is a new social media app where users share aspects of themselves previously considered too personal for social media." name="description">
+    <meta property="al:ios:app_store_id" content="909556526" />
+    <meta property="al:ios:app_name" content="Incogo" />
+    <meta property="og:title" content="Lyf iOS Deep Link" />
+    <meta property="og:type" content="website" />
+    <meta property="al:web:url" content="https://www.lyfapp.com" />
+    <script type="text/javascript">
+        (function(d) {
+            var config = {
+                    kitId: 'pit4htm',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded")
+                    return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+        window.onunload = function() {};
+    </script>
+    <meta property="og:title" content="Lyf. Your journey starts here." />
+    <meta property="og:url" content="https://www.lyfapp.com" />
+    <meta property="og:image" content="https://d1jqemu0j70f8g.cloudfront.net/platform_static_content/facebook_metatag-new.jpg" />
+    <meta property="og:site" content="Lyf" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Lyf is a new social media app where users share aspects of themselves previously considered too personal for social media." />
+    <title> lyf </title>
+    <link rel="stylesheet" href="css/legals.min.css" />
+    <script type="text/javascript">
+        var _sf_startpt = (new Date()).getTime()
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-87613228-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- <script src="/js/jquery1.11.min.js"></script> -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        var standalone = window.navigator.standalone,
+            userAgent = window.navigator.userAgent.toLowerCase(),
+            safari = /safari/.test(userAgent),
+            ios = /iphone|ipod|ipad/.test(userAgent); //iphone|ipod|
+        if (ios) {
+            if (!standalone && !safari) {
+                $('html').addClass("ios");
+            };
+        };
+    </script>
+    <script type="text/javascript">
+        function blurImage() {
+            $(function() {
+                if ($(".incogo-me-header-img").is(":visible")) {
+                    $(".incogo-me-header-img").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+                if ($(".blur-me-2").is(":visible")) {
+                    $(".blur-me-2").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+                if ($(".member-img-set").is(":visible")) {
+                    $(".member-img-set").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+            });
+
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+    <div id="bodywrap" class="body-wrap ">
+        <div id="pageSlide" class="page-wrap-slide">
+            <nav class="navbar nav-mobile navbar-fixed-top mobile-header" style='top:0'>
+                <div class="mobile-nav-wrap">
+                    <a class="back-btn pull-left-mob" href="javascript:window.history.back();"></a>
+                    <h1><a class="scrollToTop" href="javascript:void(0)">Terms of Service</a></h1>
+                </div>
+            </nav>
+            <!--incogo-me-container-->
+            <div class="container-fluid incogo-me-container mobile-w-2 legels-pages ">
+                <div class="container">
+
+                    <div class="row my-content terms-content">
+                        <ul class="terms-menu">
+                            <li><a href="#intro-t">Introduction</a></li>
+                            <li><a href="#privacy-t">Privacy and lyf community guidelines</a></li>
+                            <li><a href="#compliant-t">Lyf: a compliant forum</a></li>
+                            <li><a href="#Interacting-t">Interacting with other lyf users</a></li>
+                            <li><a href="#respect-t">We respect your content</a></li>
+                            <li><a href="#few-t">A few things about you before we get started</a></li>
+                            <li><a href="#security-t">Security of your account</a></li>
+                            <li><a href="#rights-t">Your rights to use the lyf service</a></li>
+                            <li><a href="#required-t">Required to Do</a></li>
+                            <li><a href="#please-t">Please Don’t …</a></li>
+                            <li><a href="#intellectual-t">Lyf Intellectual Property</a></li>
+                            <li><a href="#reporting-t">Reporting instances of copyright infringement</a></li>
+                            <li><a href="#liability-t">Our liability to you</a></li>
+                            <li><a href="#termination-t">Termination</a></li>
+                            <li><a href="#lyfsup-t">Lyf Support<sup>™</sup></a></li>
+                            <li><a href="#general-t">General</a></li>
+                        </ul>
+                    </div>
+                    <div class="row my-content terms-content">
+                        <div class="terms-txt">
+                            <h3 id="intro-t">Introduction</h3>
+                            <p><strong>1.</strong> The Lyf App website and related mobile application (collectively the “<strong>Services</strong>”) are made available to you by Lyf App Pty Ltd (ACN 165 855 185) (“lyf”) subject to these terms of service
+                                and the lyf <a href="/privacy_policy">privacy policy</a> (collectively the Terms). </p>
+                            <p><strong>2.</strong> More information about the Services may be found at <a href="lyfapp.com.">lyfapp.com.</a></p>
+                            <p><strong>3.</strong> By accessing, using or uploading or downloading any information or materials to or from the Services, or by indicating your assent to these Terms by registering an account, you are agreeing to the these
+                                Terms. </p>
+                            <p><strong>4.</strong> If you do not agree to these Terms, please do not register to use lyf. </p>
+                            <p><strong>5.</strong> We may alter these Terms at any time. The most current copy of these Terms will be available at any time on our website.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="privacy-t">Privacy and lyf community guidelines</h3>
+                            <p><strong>6.</strong> By agreeing to use the Services in accordance with these Terms, you acknowledge and agree:</p>
+                            <p><strong>6.1.</strong> we may collect and use your personal information in accordance with our privacy policy; and</p>
+                            <p><strong>6.2.</strong> you will participate and use the Service in accordance with our community guidelines, including any updates or amendments made to our privacy policy and/or community guidelines that may be made by us from
+                                time to time.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="compliant-t">Lyf: a compliant forum</h3>
+                            <p><strong>7.</strong> The social and interactive nature of the Services necessarily means we require all of our users to abide by the law and these Terms. Set out below in these Terms are details of the key Dos and Don’ts that
+                                apply to your participation in the Service.</p>
+                            <p><strong>8.</strong> By registering a lyf account and commencing your first beat you warrant to us on a continuing basis that the content you post is lawful and does not, for example, infringe upon any person’s rights (including
+                                any person’s intellectual property rights).</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="Interacting-t">Interacting with other lyf users</h3>
+                            <p><strong>9.</strong> The Service operates as a forum where you can post your individual beats and, subject to your privacy settings, connect with other lyf users in an online forum. As a neutral facilitator, lyf is not directly
+                                involved in the actual interactions between lyf users of the Services. As a result, lyf has no control over the truth, accuracy, quality, legality, or safety of postings made by users of the Service. </p>
+                            <p><strong>10.</strong> Lyf has no responsibility to confirm the identity of users or the accuracy or otherwise of their content. Please always exercise common sense, courtesy and good judgement when dealing with any other lyf
+                                user.
+                            </p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="respect-t">We respect your content</h3>
+                            <p><strong>11.</strong> You own the information, data, text, software, sound, photographs, graphics, video, messages, posts, tags, or other materials you make available in connection with the Services (“<strong>Content</strong>”),
+                                whether publicly posted, privately transmitted, or submitted through a third party API (e.g. a photograph submitted via Instagram). </p>
+                            <p><strong>12.</strong> You grant us a non-exclusive, transferable, sub-licensable, royalty-free, worldwide licence to use any Content that you post on or in connection with the Service. This licence ends when you delete your
+                                Content or your account unless your Content has been shared with others, and they have not deleted it in which case the licence continues.</p>
+                            <p><strong>13.</strong> You are entirely responsible, not lyf, for the Content that you upload, post or otherwise make available on the Service. Please exercise discretion and careful judgment with your Content. </p>
+                            <p><strong>14.</strong> Lyf does not control, screen or monitor the Content posted to the Service by others and, as such, does not give any guarantees as to the appropriateness, integrity or quality of such Content. Lyf may, in
+                                its sole discretion (but without any obligation to do so), screen, monitor, or remove any Content, that, in lyf’s opinion, breaches these Terms. </p>
+                            <p><strong>15.</strong> You understand that by using the Services, you may be exposed to Content that is confrontational or otherwise objectionable. Under no circumstances will lyf be liable in any way for any Content, including,
+                                but not limited to, any errors or omissions in any Content, or any loss or damage of any kind incurred as a result of the use of any Content made available on the Services. You agree to bear all risks associated with the
+                                use of any Content available in connection with the Services, including any reliance on the accuracy, completeness, or usefulness of such Content.</p>
+                            <p><strong>16.</strong> You acknowledge and agree that lyf is not responsible for, and does not endorse, Content posted on the Service. If your Content violates these Terms, you may bear legal responsibility for that Content.
+                            </p>
+                            <p><strong>17.</strong> As between you and lyf, any Content will be non-confidential and non-proprietary and we will not be liable for any use or disclosure of Content. </p>
+                            <p><strong>18.</strong> You acknowledge and agree that your relationship with lyf is not a confidential, fiduciary, or other type of professional or special relationship, and that your decision to submit any Content does not place
+                                lyf in a position that is any different from the position held by members of the general public, including with regard to your Content. Note, special rules apply in respect of the Lyf Support<sup>™</sup> service. Your Content
+                                will not be subject to any obligation of confidence on the part of lyf other than as set out in our privacy policy. Lyf will not be liable for any use or disclosure of any Content you provide. </p>
+                            <p><strong>19.</strong> The Services may provide you with the option of making certain Content that you submit to the Services as private or available only to select users of the Services. If, upon submission of Content to the
+                                Services, you initially elect to mark such Content as private or available for a limited group of members, lyf will maintain the privacy of such Content in accordance with your election but subject to the rights available
+                                to us under these Terms. If you do not elect to mark your Content as private or available for a limited group of members, or later change such designation to allow such Content to be made publicly available, you are responsible
+                                for the public nature of the content. More information is available on our privacy settings page.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="few-t">A few things before we get started</h3>
+                            <p><strong>20.</strong> By registering a lyf account you represent and warrant to us on a continuing basis that you:</p>
+                            <p><strong>20.1.</strong> have not previously been suspended from using the Service or otherwise had a lyf account terminated for breach;</p>
+                            <p><strong>20.2.</strong> will only use your lyf account for the purpose of your personal beats – i.e. you will not use your account for the purpose of promoting commercial ventures or beats;</p>
+                            <p><strong>20.3.</strong> are at least thirteen years of age and, if you are a minor, you have obtained consent from a parent or guardian for the registration of your lyf account;</p>
+                            <p><strong>20.4.</strong> have authority to enter into the agreement represented by these Terms;</p>
+                            <p><strong>20.5.</strong> will not infringe the rights, including the intellectual property rights, of any person; and</p>
+                            <p><strong>20.6.</strong> understand that access to and use of the Services involves the provision, at your cost, of all equipment, software, mobile access, and internet access necessary to use the Services.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="security-t">Security of your account</h3>
+                            <p><strong>21.</strong> You must, at all times:</p>
+                            <p><strong>21.1.</strong> keep your lyf account password secure and confidential;</p>
+                            <p><strong>21.2.</strong> not permit others to use your account;</p>
+                            <p><strong>21.3.</strong> not use other lyf members’ accounts; and</p>
+                            <p><strong>21.4.</strong> not license or assign your account or otherwise seek to commercialise your lyf account.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="rights-t">Your rights to use the lyf service</h3>
+                            <p><strong>22.</strong> Subject to your ongoing compliance with these Terms, lyf grants to you a non-exclusive and revocable licence to use and access the Service via a generally available web browser or mobile device (“your lyf
+                                licence”).
+                            </p>
+                            <p><strong>23.</strong> Your lyf licence is not assignable and cannot be sublicensed. You must not use your lyf licence for any purpose other than its intended purpose. For example, and without limitation, you must not use your
+                                lyf licence for unauthorised data collection purposes through scraping, spidering, crawling or similar means.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="required-t">Required “To Do”</h3>
+                            <p><strong>24.</strong> When using lyf you must at all times:</p>
+                            <p><strong>24.1.</strong> Use lyf for lawful purposes only.</p>
+                            <p><strong>24.2.</strong> Provide accurate information to lyf.</p>
+                            <p><strong>24.3.</strong> Respect the intellectual property rights of others.</p>
+                            <p><strong>24.4.</strong> Report to us any breaches (known or suspected) of another person’s rights that you may identify during your use of the Service.</p>
+                            <p><strong>24.5.</strong> Take appropriate steps to protect your own personal and sensitive information such as your address and telephone numbers, and otherwise review and comply with our privacy policy.</p>
+                            <p><strong>24.6.</strong> Review and comply with notices sent to you by lyf.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="please-t">Please “Do NOT”</h3>
+                            <p><strong>25.</strong> You must not:</p>
+                            <p><strong>25.1.</strong> Post content that is defamatory, untruthful, discriminatory or otherwise objectionable or otherwise designed (intentionally or otherwise) to injure a person’s reputation.</p>
+                            <p><strong>25.2.</strong> Harass or otherwise send unwelcome content to other lyf members.</p>
+                            <p><strong>25.3.</strong> Post Content that infringes any person’s rights including their intellectual property rights.</p>
+                            <p><strong>25.4.</strong> Post content that you do not have the right to post – for example, you must not post content that would breach a contractual obligation owed to another party or content that would involve a breach of
+                                confidence.
+                            </p>
+                            <p><strong>25.5.</strong> Create false accounts or profiles for people other than yourself.</p>
+                            <p><strong>25.6.</strong> Post or send any unsolicited or unauthorised advertising, promotional materials, junk mail or spam via your account or the lyf service.</p>
+                            <p><strong>25.7.</strong> Introduce any software viruses or any other malicious computer code or file designed or intended to destroy, interrupt or limit lyf’s functionality and/or members’ access to their lyf accounts.</p>
+                            <p><strong>25.8.</strong> Use bots or other automated methods to access lyf.</p>
+                            <p><strong>25.9.</strong> Reverse engineer the lyf service. For example, you must not attempt to decompile, disassemble or otherwise derive our underlying source code in the lyf platform.</p>
+                            <p><strong>25.10.</strong> Attempt to (or actually) override any security measures within the lyf service or otherwise seek to interfere with or disrupt lyf’s services, including, but not limited to, any servers or networks connected
+                                to lyf.</p>
+                            <p><strong>25.11.</strong> Misrepresent an association, affiliation or sponsorship with lyf that you do not have.</p>
+                            <p><strong>25.12.</strong> Seek to loan, license, sell or otherwise monetise your lyf account or the lyf platform or associated services in any way.</p>
+                            <p><strong>25.13.</strong> Remove any copyright, trade mark or other proprietary rights notices contained in or on lyf.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="intellectual-t">Lyf Intellectual Property</h3>
+                            <p><strong>26.</strong> You acknowledge and agree that the Service including all lyf trade marks, copyright and any patents (whether or not registered) represents the exclusive intellectual property rights of lyf. Lyf grants you
+                                a restricted, revocable and non-exclusive licence to use the Service (including all intellectual property rights in the Service) subject to your compliance with these Terms.</p>
+                            <p><strong>27.</strong> You must not infringe our intellectual property rights.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="reporting-t">Reporting instances of copyright infringement</h3>
+                            <p><strong>28.</strong> If you believe in good faith that Content has been posted on the lyf platform that infringes your copyright or is otherwise in breach of these Terms, you may submit a take-down notice directly to lyf.</p>
+                            <p><strong>29.</strong> Please send your notice to lyf at <a href="mailto:copyright@lyfapp.com.au">copyright@lyfapp.com.au</a></p>
+                            <p><strong>30.</strong> Your take-down notice must contain the following minimum details:</p>
+                            <p><strong>30.1.</strong> An electronic or physical signature of the person authorised to act on behalf of the owner of the copyright interest.</p>
+                            <p><strong>30.2.</strong> A description of the relevant copyright materials that you claim to have been infringed.</p>
+                            <p><strong>30.3.</strong> A description of the location on the lyf website (e.g. details of the relevant member’s account) of the allegedly infringing material.</p>
+                            <p><strong>30.4.</strong> Your contact details including your phone number and email address.</p>
+                            <p><strong>30.5.</strong> A signed statement by you that: (i) you have a good faith belief that the disputed use is unauthorised by you (or the relevant copyright owner you represent); and (ii) you understand that you may be liable
+                                for making false allegations or otherwise providing false information or falsely representing your authority to make the complaint.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="liability-t">Our liability</h3>
+                            <p><strong>31.</strong> You acknowledge and agree that:</p>
+                            <p><strong>31.1.</strong> Lyf provides the lyf platform and Services on an “as is” and “as available” basis with no guarantees of completeness, accuracy or timeliness, and without representations, warranties or other contractual
+                                terms of any kind, express or implied.</p>
+                            <p><strong>31.2.</strong> Lyf does not control or vet user-generated content for accuracy. Further, we do not have an obligation to verify the identity of any registered user or to otherwise monitor the use of members’ accounts
+                                and their beat content.</p>
+                            <p><strong>31.3.</strong> Lyf does not provide any express warranties or representations regarding the Services. </p>
+                            <p><strong>31.4.</strong> Lyf does not guarantee that the Services (including your account) will function without interruption or errors. Specifically, lyf’s operation may be interrupted due to maintenance, updates, system or
+                                network failures or unauthorised hacking. We disclaim all liability for damages caused by any such interruption or errors in functioning.</p>
+                            <p><strong>32.</strong> To the fullest extent permissible pursuant to applicable law, lyf disclaims all liability to you and everyone else in respect of the Services including all content on the lyf platform, whether under any
+                                theory of tort, contract, warranty, strict liability or negligence or otherwise, and whether in respect of direct, indirect, consequential, special, punitive or similar damages, even if lyf was advised, knew or should have
+                                known of the possibility of such damages.</p>
+                            <p><strong>33.</strong> Information available on the lyf platform, including information and advice provided by other lyf members is not, and must not be construed as, professional advice or a service provided by lyf. You should
+                                always consult with a relevant qualified professional familiar with your particular circumstances for advice concerning your specific needs before making any decision.</p>
+                            <p><strong>34.</strong> You release lyf and our officers, employees, contractors, agents and representatives (the “released parties”) from any and all liability in connection with your use of the Services and your Content and
+                                promise not to sue the released parties for any claims, actions, injury, damage or loss associated with such use. </p>
+                            <p><strong>35.</strong> You indemnify Lyf App Pty Ltd and its officers, employees, contractors and agents against any and all damages, losses and costs (including but not limited to our reasonable legal fees) relating to all third
+                                party claims, proceedings and investigations arising from your use of the Service and any breach by you of these Terms.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="termination-t">Termination</h3>
+                            <p><strong>36.</strong> You may terminate your account with lyf and discontinue your use of the Service at any time. </p>
+                            <p><strong>37.</strong> Termination will be your sole and exclusive remedy against lyf and its officers, employees, agents and contractors.</p>
+                            <p><strong>38.</strong> We may temporarily suspend or permanently terminate your account at any time with or without notice to you if:</p>
+                            <p><strong>38.1.</strong> you breach these Terms, or</p>
+                            <p><strong>38.2.</strong> we have reasonable grounds to suspect your material breaches any of these Terms, or</p>
+                            <p><strong>38.3.</strong> we have reasonable grounds to suspect your use of the Service is contrary to any acceptable use policy relevant to the hosting and delivery of the lyf platform, or</p>
+                            <p><strong>38.4.</strong> we have reasonable grounds to suspect your use of the Service breaches any law in any jurisdiction.</p>
+                            <p><strong>39.</strong> Without limiting the above, lyf reserves the right to withhold, remove or discard any content available as part of your account in any or all jurisdictions in which the lyf service operates.</p>
+                            <p><strong>40.</strong> Upon termination of your lyf account for any reason, you will no longer have access to your account or the Services. These Terms relating to your obligations, liability, indemnity, and intellectual property
+                                infringement will survive any termination.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="lyfsup-t">Lyf Support<sup>™</sup></h3>
+                            <p><strong>41.</strong> Lyf makes a general counselling service available for lyf members. For more information about this service, see here. </p>
+                            <p><strong>42.</strong> Although lyf is not under any obligation to review and moderate your Content, if we identify any of your Content that raises concerns about your safety or the safety of others, we may try to contact you
+                                to make sure that you or others are safe. You acknowledge that we may also need to pass your contact details on to authorities who can help protect your safety or the safety of others (for example, to the police or a mental
+                                health crisis service).</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="general-t">General</h3>
+                            <p><strong>43.</strong> These Terms constitute the entire agreement between you and lyf with respect to its subject matter and supersedes all other oral or written representations, understandings or agreements relating to the
+                                subject matter.</p>
+                            <p><strong>44.</strong> Lyf reserves the right to modify, supplement, or replace these Terms. Any such change will operate prospectively and will be communicated to you via posting on lyfapp.com. If you do not agree to any new
+                                modification or other change to these Terms then you may terminate your account in accordance with these terms.</p>
+                            <p><strong>45.</strong> You may not assign or delegate any rights or obligations under these Terms of Service. Any purported assignment and delegation will be ineffective. We may freely assign or delegate all rights and obligations
+                                under these Terms of Service, fully or partially without notice to you.</p>
+                            <p><strong>46.</strong> You are prohibited from seeking, or otherwise claiming an entitlement to, rescission, injunctive or other equitable relief or from seeking to restrain the operation of the Service.</p>
+                            <p><strong>47.</strong> If any term is found to be unenforceable, the remaining portion will remain in full force and effect. If we fail to enforce any of this Statement, it will not be considered a waiver.</p>
+                            <p><strong>48.</strong> These Terms, and the agreement constituted by them, take effect, is governed by and will be construed in accordance with the laws of the State of Victoria, Australia. You submit to the exclusive jurisdiction
+                                of the Courts of that jurisdiction. You may not challenge the application of this jurisdiction on any grounds including on the basis that it is an inconvenient forum.</p>
+                            <p><strong>49.</strong> The Services are controlled by lyf from its Australian headquarters. Lyf makes no representation that the Content or the Services are appropriate or available for use in other locations. You must not access
+                                or use the Services from any jurisdiction where such access or use is illegal is prohibited. </p>
+                            <p><strong>50.</strong> If you choose to use or access the Service from locations outside of Australia, you do so at your own initiative and you are responsible for compliance with applicable laws that are local to you. </p>
+                            <p><strong>51.</strong> The agreement reflected in these Terms was written in English. To the extent a translated version of the Terms conflict with the English version, the English version controls.</p>
+                        </div>
+                    </div>
+                </div>
+                <a id="hitmeup" class="back-to-top" href="javascript:void(0);" style="display:none;"></a>
+            </div>
+            <!--incogo-me-container-->
+            <style type="text/css">
+                @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+                @font-face {
+                    font-family: 'myriadpro';
+                    src: url(fonts/myriadpro.eot);
+                    src: local('myriadpro'), url(fonts/myriadpro.woff) format('woff'), url(fonts/myriadpro.ttf) format('truetype');
+                }
+                
+                @font-face {
+                    font-family: 'MyriadProLight';
+                    src: url(fonts/myriadpro-light-webfont.eot);
+                    src: url(fonts/myriadpro-light-webfont.eot?#iefix) format('embedded-opentype'), url(fonts/myriadpro-light-webfont.woff) format('woff'), url(fonts/myriadpro-light-webfont.ttf) format('truetype'), url(fonts/myriadpro-light-webfont.svg#MyriadProLight) format('svg');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                
+                @font-face {
+                    font-family: 'MyriadPro-Bold';
+                    src: url(fonts/MyriadPro-Bold.eot);
+                    src: url(fonts/MyriadPro-Bold.woff2) format('woff2'), url(fonts/MyriadPro-Bold.woff) format('woff'), url(fonts/MyriadPro-Bold.ttf) format('truetype'), url(fonts/MyriadPro-Bold.svg#MyriadPro-Bold) format('svg'), url(fonts/MyriadPro-Bold.eot?#iefix) format('embedded-opentype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                
+                footer .menu {
+                    bottom: 0px;
+                    left: 0%;
+                    background-color: #fff;
+                    width: 100%;
+                    z-index: 3;
+                    margin: 0;
+                    padding: 0;
+                    height: 80px;
+                }
+                
+                footer .menu ul {
+                    width: 100%;
+                    text-align: center;
+                    list-style: none;
+                    margin: 0;
+                    max-width: 350px;
+                    padding: 0;
+                    margin: auto;
+                }
+                
+                footer .menu ul li {
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+                
+                footer .menu>ul>li>a {
+                    font-family: 'MyriadPro-Bold';
+                    color: #383838;
+                    font-size: 16px;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+                
+                footer .menu a:hover {
+                    text-decoration: underline;
+                }
+                
+                footer .menu ul li.active a {
+                    /*	text-decoration:underline;*/
+                    color: #1fc49b;
+                }
+                
+                footer .menu>ul>li:last-child {
+                    color: #1fc49b;
+                    font-family: 'MyriadPro-Bold';
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    line-height: 1.5;
+                    font-weight: normal;
+                    margin-top: 0;
+                    position: relative;
+                    top: -15px;
+                }
+                
+                footer .menu.menu-fix>ul>li:last-child {
+                    width: 100%;
+                    line-height: 30px;
+                }
+                
+                footer .menu.menu-fix .sub-menu {
+                    left: -170px;
+                    bottom: 60px;
+                }
+                
+                footer .menu.menu-fix .sub-menu::after {
+                    left: auto;
+                    right: 13px;
+                }
+                
+                .has-sub {
+                    position: relative;
+                }
+                
+                .sub-menu {
+                    position: absolute;
+                    background: #383838;
+                    width: 224px !important;
+                    bottom: 80px;
+                    left: 0;
+                    padding: 0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    display: none;
+                }
+                
+                .has-sub:hover .sub-menu {
+                    display: block;
+                }
+                
+                .sub-menu:before {
+                    content: "";
+                    width: 50px;
+                    height: 20px;
+                    position: absolute;
+                    bottom: -20px;
+                    left: 0px;
+                }
+                
+                .sub-menu:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-right: solid transparent 11px;
+                    border-left: solid transparent 11px;
+                    border-top: solid #383838 12px;
+                    position: absolute;
+                    bottom: -12px;
+                    left: 13px;
+                }
+                
+                .sub-menu li {
+                    width: 100%;
+                    padding: 0;
+                    line-height: 36px;
+                    text-align: left;
+                }
+                
+                .sub-menu li a {
+                    display: block;
+                    width: 100%;
+                    color: #fff !important;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 0 20px;
+                    text-transform: none !important;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    font-family: 'MyriadPro-Bold';
+                }
+            </style>
+            <footer>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Lyf Squad</a></li>
+                        <li class="active has-sub">
+                            <a href="javascript:void(0)">Legals</a>
+                            <ul class="sub-menu">
+                                <li class=""><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li class="active"><a href="terms.html">Terms of Service</a></li>
+                                <li class=""><a href="community-guidelines.html">Community Guidelines</a></li>
+                            </ul>
+                        </li>
+                        <li>&copy; 2020 lyf app pty ltd</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <script>
+                $(function() {
+                    triggerGa('Lyf user', 'click', 'Term of service');
+                });
+            </script>
+        </div>
+        <script>
+            var BASEPATH = 'https://www.lyfapp.com/'
+            BASEPATH = BASEPATH.replace('http:', '');
+        </script>
+        <!-- <script src="js/bootstrap311.min.js"></script> -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- <script type="text/javascript">
+            jwplayer.key = "x5a12vINibQfekVBqzausGb0JCAtgVwbzEuLXw==";
+        </script> -->
+        <script type="text/javascript">
+            scrollContentLoader("#loader_anim");
+            var parseQueryString = function() {
+                var str = window.location.search;
+                var objURL = {};
+                str.replace(
+                    new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+                    function($0, $1, $2, $3) {
+                        objURL[$1] = $3;
+                    }
+                );
+                return objURL;
+            };
+            $(document).ready(function() {
+                track_load = parseInt($("#current_page").val()) + 1;; //total loaded record group(s)
+                var loading = false; //to prevents multipal ajax loads
+                total_groups = $("#pageCount").val(); //total record group(s)
+                $(window).scroll(function() { //detect page scroll
+                    var totalScroll = parseInt(document.documentElement.clientHeight + $(document).scrollTop());
+                    if (totalScroll >= $(document).height()) //user scrolled to bottom of the page?
+                    {
+                        if ($("#scroll_type").length && $("#scroll_type").val() == 'static') {
+                            return false;
+                        }
+                        if (track_load < total_groups && loading == false) //there's more data to load
+                        {
+                            //$(".acpaging").last().attr('data-page-ref');
+                            var lastId = getListId(".acpaging", "last");
+                            //console.log(lastId);
+                            loading = true; //prevent further ajax loading
+                            $('.animation_image').show(); //show loading image
+
+                            //load data from the server using a HTTP POST request
+                            var url = BASEPATH + 'member/' + $("#ajaxSrc").val() + '/' + track_load + '?pagingCursor=' + lastId;
+                            $.post(url, {
+                                search: $("#txtSearch").val()
+                            }, function(data) {
+                                $("#contentDump").append(data); //append received data into the element
+                                //hide loading image
+                                $('.animation_image').hide(); //hide loading image once data is received
+                                track_load++; //loaded group increment
+                                loading = false;
+                            }).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
+                                $('.animation_image').hide(); //hide loading image
+                                loading = false;
+                            });
+                        }
+                    }
+                });
+            });
+
+            function getListId(cls, index, container) {
+                var id = null;
+                if (index == 'last') {
+                    id = $(cls).last().attr('data-page-ref');
+                } else if (index == 'first') {
+                    id = $(cls).first().attr('data-page-ref');
+                }
+                return id;
+            }
+        </script>
+</body>
+
+</html>

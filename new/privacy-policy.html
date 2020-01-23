@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="Lyf is a new social media app where users share aspects of themselves previously considered too personal for social media." name="description">
+    <meta property="al:ios:app_store_id" content="909556526" />
+    <meta property="al:ios:app_name" content="Incogo" />
+    <meta property="og:title" content="Lyf iOS Deep Link" />
+    <meta property="og:type" content="website" />
+    <meta property="al:web:url" content="https://www.lyfapp.com" />
+    <script type="text/javascript">
+        (function(d) {
+            var config = {
+                    kitId: 'pit4htm',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded")
+                    return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+        window.onunload = function() {};
+    </script>
+    <meta property="og:title" content="Lyf. Your journey starts here." />
+    <meta property="og:url" content="https://www.lyfapp.com" />
+    <meta property="og:image" content="https://d1jqemu0j70f8g.cloudfront.net/platform_static_content/facebook_metatag-new.jpg" />
+    <meta property="og:site" content="Lyf" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Lyf is a new social media app where users share aspects of themselves previously considered too personal for social media." />
+    <title> lyf </title>
+    <link rel="stylesheet" href="css/legals.min.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=50?v=2" />
+    <script type="text/javascript">
+        var _sf_startpt = (new Date()).getTime()
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-87613228-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- <script src="/js/jquery1.11.min.js"></script> -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        var standalone = window.navigator.standalone,
+            userAgent = window.navigator.userAgent.toLowerCase(),
+            safari = /safari/.test(userAgent),
+            ios = /iphone|ipod|ipad/.test(userAgent); //iphone|ipod|
+        if (ios) {
+            if (!standalone && !safari) {
+                $('html').addClass("ios");
+            };
+        };
+    </script>
+    <script type="text/javascript">
+        function blurImage() {
+            $(function() {
+                if ($(".incogo-me-header-img").is(":visible")) {
+                    $(".incogo-me-header-img").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+                if ($(".blur-me-2").is(":visible")) {
+                    $(".blur-me-2").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+                if ($(".member-img-set").is(":visible")) {
+                    $(".member-img-set").pixastic("blurfast", {
+                        amount: 5
+                    });
+                }
+            });
+
+        }
+    </script>
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="bodywrap" class="body-wrap ">
+        <div id="pageSlide" class="page-wrap-slide">
+            <nav class="navbar nav-mobile navbar-fixed-top mobile-header" style='top:0'>
+                <div class="mobile-nav-wrap">
+                    <a class="back-btn pull-left-mob" href="javascript:window.history.back();"></a>
+                    <h1><a class="scrollToTop" href="javascript:void(0)">Privacy Policy</a></h1>
+                </div>
+            </nav>
+            <!--incogo-me-container-->
+            <div class="container-fluid incogo-me-container mobile-w-2 legels-pages ">
+                <div class="container">
+                    <div class="row my-content terms-content">
+                        <div class="terms-txt">
+                            <h3 id="introduction-p">Privacy Policy</h3>
+                            <p style="margin-top:20px;">
+                                This Privacy Policy outlines our practices and rules concerning the handling of your personal information. We will abide by it and the Australian Privacy Principles in force under the Privacy Act 1988. You may request a printed copy of this Policy, at
+                                no charge to you, by contacting us in the manner outlined at the end of this Policy.
+                            </p>
+                            <p>When used in this Policy, "personal information" has the meaning given in the Privacy Act 1988 (Cth). Generally, it means any information or an opinion that could be used to identify you. </p>
+
+                            <p>This Policy is to be read in conjunction with our <a href="/terms">Terms of Service</a>.</p>
+                        </div>
+                        <ul class="terms-menu">
+                            <li><a href="#introduction-p">Introduction</a></li>
+                            <li><a href="#general-p">General</a></li>
+                            <li><a href="#starting-p">Starting your beat on lyf</a></li>
+                            <li><a href="#personal-p">What personal information is covered by this policy?</a></li>
+                            <li><a href="#collect-p">Why does lyf collect personal information?</a></li>
+                            <li><a href="#how-p">How lyf collects personal information</a></li>
+                            <li><a href="#consent-p">Your consent relating to lyf's use of your personal information</a></li>
+                            <li><a href="#this-p">This is how lyf uses your personal information</a></li>
+                            <li><a href="#sharing-p">Sharing public beats</a></li>
+                            <li><a href="#direct-p">Direct Marketing</a></li>
+                            <li><a href="#keeping-p">Keeping your personal information up-to-date</a></li>
+                            <li><a href="#security-p">Lyf security measures</a></li>
+                            <li><a href="#contacting-p">Contacting lyf to access your personal information</a></li>
+                            <li><a href="#change-p">Changes to this Policy</a></li>
+                            <li><a href="#concerns-p">Concerns or requests for access</a></li>
+                            <li><a href="#making-p">Making a complaint</a></li>
+                        </ul>
+                    </div>
+                    <div class="row my-content terms-content">
+                        <div class="terms-txt">
+                            <h3 id="introduction-p">Introduction</h3>
+                            <p style="margin-top:20px;">
+                                At lyf, we have built a social media platform for people all over the world to share their personal beats. Personal beats are inherently private and so, from our very inception, protecting privacy has been a core value. Lyf is designed to foster confidence
+                                that when you create a personal beat, your beat remains just that: personal. Like anything in your personal life, you choose what you share and with whom you want to share. Maybe you want to share it with a few close friends
+                                or family on a private beat? Or maybe you’re happy to share it with the whole world on a public beat? Alternatively, you may share your beat as an anonymous user. At the end of the day, for every beat you make, you are
+                                in complete control.
+                            </p>
+                            <p>When it comes to privacy and the management of your personal information, please be assured, on the lyf platform:</p>
+                            <ul class="disc-list">
+                                <li>You maintain control over the disclosure of your personal information.</li>
+                                <li>We won’t give your personal information to third parties for direct marketing purposes</li>
+                                <li>We will not share your personal information with anyone except as disclosed in this policy.</li>
+                                <li>We treat your personal information with the highest regard to privacy and security.</li>
+                            </ul>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="general-p">General</h3>
+                            <p><strong>1.</strong> Lyf is a social media platform dedicated to enriching the lives of its members. At lyf’s heart is the creation of individual member accounts through which members are able to maintain their own personal
+                                beats.
+                            </p>
+                            <p><strong>2.</strong> Lyf is built around all the personal beats individuals are making in their life, and all the personal beats individuals are following. Beats can be private or public. Although lyf collects personal information
+                                through the general operation of your account only our members have the ability to share their personal information.</p>
+                            <p><strong>3.</strong> Through your privacy settings, Lyf enables you to easily control and manage your privacy by setting limits on the extent to which your beats are shared.</p>
+                            <p><strong>4.</strong> Building trust with our members is critical to lyf. Accordingly, we will only use your personal information in accordance with this Policy and our Terms of Service.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="starting-p">Starting your beat on lyf</h3>
+                            <p><strong>5.</strong> To create your lyf account minimal personal information is collected. You will also be asked to create a password. </p>
+                            <p><strong>6.</strong> By creating a lyf account you will have complete control over the protection of your personal information. Other members will only be able to view your personal beat when you specifically elect to invite
+                                them to follow your beat. There is no requirement to make your beats public. You can have some private beats, some anonymous and some public beats.</p>
+                            <p><strong>7.</strong> When you commence posting details of your private beats on lyf only a limited amount of information will be shared to the people you decide to invite to follow you – e.g. the title of your beat. If they
+                                accept your invitation, they will then see all the details you post on your private beats. If you no longer wish to share your private beat with your chosen followers, you may remove them as followers at any time.</p>
+                            <p><strong>8.</strong> By making a beat public, you acknowledge that you are immediately opening the information you post on that beat to the public. This means that anyone with an internet connection could potentially see all
+                                of the posts you make on your public beat.</p>
+                            <p><strong>9.</strong> By creating your account and commencing your first beat on lyf you expressly and voluntarily accept the <a href="/terms">Terms of Service</a>, including the terms of this Policy.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="personal-p">What personal information do we collect?</h3>
+                            <p><strong>10.</strong> The policy applies to all personal information which we collect hold or use from and relating to you. For example, we collect certain details from you when you first register and create your lyf account.</p>
+                            <p><strong>11.</strong> We also collect the personal information which you tell us and which you share as part of your content on your shared beats. In some cases, with your consent (for example, if you engage us to provide our
+                                Lyf Support<sup>™</sup> services), we may also collect health information about you, such as your medical history. </p>
+                            <p><strong>12.</strong> If you want to share a story about another person’s experiences of health related issues in which that person will be easily identifiable, you must seek permission from the individual or next of kin first
+                                and let them know about our Policy. Some people may not want their experience made public. It is important to consider the impact and respect the wishes of others affected by the same story as you.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="collect-p">Why does lyf collect personal information?</h3>
+                            <p><strong>13.</strong> Lyf collects and retains personal information about you including your name, gender, location, email address and contact details and the details you choose to share concerning your beats as tracked by you
+                                in the ordinary course of your use of lyf.</p>
+                            <p><strong>14.</strong> Lyf also collects any health information that you elect to share with our counsellors as part of any Lyf Support services that you may elect to receive.</p>
+                            <p><strong>15.</strong> Collection of your personal information is necessary for us to provide you with the full range of lyf’s services.</p>
+                            <p><strong>16.</strong> In particular, we collect your information from you to:</p>
+                            <p><strong>a.</strong> establish your lyf account</p>
+                            <p><strong>b.</strong> develop a history of the beat types (tags) you are making and the beat types (tags) you are following. We do this to help us suggest beats you may be interested in following.</p>
+                            <p><strong>c.</strong> receive and respond to communications from you regarding your lyf experiences – including details of any complaints or customer support enquiries</p>
+                            <p><strong>d.</strong> provide Lyf Support services</p>
+                            <p><strong>e.</strong> maintain our business relationship with you and offer our services on an on-going basis</p>
+                            <p><strong>17.</strong> We may also use your information for in-house research and analysis. This helps us, for example, to: (i) improve our understanding of customer needs; and (ii) support strategic development.</p>
+                            <p><strong>18.</strong> Lyf or its undertaking may be the subject of sale or negotiations for sale in which case your personal information may be disclosed and ultimately pass into the custody of a purchaser. If this occurs disclosure
+                                and transfer will be subject to the terms of this Policy and the Australian Privacy Principles.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="how-p">How lyf collects personal information</h3>
+                            <p><strong>19.</strong> We generally only collect your personal information directly from you or from your followers – e.g. friends and family who have commented and/or otherwise contributed to your beats. Remember, you will always
+                                be able to moderate the data that others post about you on your beat.</p>
+                            <p><strong>20.</strong> Personal information is generally collected during the course of our contact with you and is largely provided by you, first as part of your registration to become a lyf member and then on ongoing basis
+                                as you create and make your own lyf beats and/or take advantage of our Lyf Support service.</p>
+                            <p>
+                                <strong21.</strong> We also collect content and information that other people provide when they use our Services, including information about you.</p>
+                            <p><strong>22.</strong>We may also request:</p>
+                            <p><strong>a.</strong> your preferences for receiving further information about our services or activities</p>
+                            <p><strong>b.</strong> demographic information and unique identifiers in order to provide you with a more personalised service or to verify your passwords.</p>
+                            <p><strong>23.</strong> Wherever possible, we will try to collect personal information from you directly, rather than from another person or source, unless it is unreasonable or impractical to do so. </p>
+                            <p><strong>24.</strong> We also use technology such as cookies to collect personal information from you. A cookie is a small file, which is placed on your hard drive when you visit lyf. We use information from cookies for various
+                                purposes including:</p>
+                            <p><strong>a.</strong> identifying returning users, and members</p>
+                            <p><strong>b.</strong> eliminating the need for returning users to re-enter their login details</p>
+                            <p><strong>c.</strong> enabling you to move more easily around our website and applications</p>
+                            <p><strong>d.</strong> tracking your use of our platform to better develop our platform and applications in accordance with your requirements</p>
+                            <p><strong>e.</strong> building up an anonymous profile based on your useage patterns across our platform, applications and third party websites, which enables us to make content available to you that we believe may be more relevant
+                                to you having regard to your interests.</p>
+                            <p><strong>25.</strong> You can delete cookies from your hard drive at any time. Deleting cookies and other settings such as your stored username and password will require them to be re-entered when you next log in.</p>
+                            <p><strong>26.</strong> You can also choose whether you wish us to collect cookie information for these purposes using the settings in your browser.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="consent-p">Your consent relating to lyf’s use of your personal information</h3>
+                            <p><strong>27.</strong> In most cases we will require you to specifically consent to any collection, use or disclosure of your personal information us. This is done by accepting the Terms of Service and consenting to this Policy.
+                                Sometimes your consent may be implied through your conduct with us.</p>
+                            <p><strong>28.</strong> In all cases you agree that provision by you to us of personal information, including sensitive information, constitutes consent to our collecting, storing, using and disclosing that information for the
+                                purposes outlined above and in the ways outlined in this policy.</p>
+                            <p><strong>29.</strong> You consent to the disclosure of your personal information if: </p>
+                            <p><strong>a.</strong> we believe disclosure is necessary to prevent injury to life or health; or</p>
+                            <p><strong>b.</strong> it is required or authorised by or under an Australian law or by the Order of an Australian Court or Tribunal.</p>
+                            <p><strong>30.</strong> No matter how your personal or sensitive information is collected, it will be dealt with in accordance with this Policy and the Australian Privacy Principles.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="this-p">How lyf uses your personal information</h3>
+                            <p><strong>31.</strong> We use your personal information to provide lyf’s services to you and your followers.</p>
+                            <p><strong>32.</strong> When you elect to make a beat public then, and only then, will other members be able to search lyf to identify your public beats. By keeping your beats private you ensure other members who you haven’t invited
+                                to follow you are not able to view your beats.</p>
+                            <p><strong>33.</strong> We may also use the personal information shared within the content of your beats to identify the potential of offering you access to our Lyf Support services. This does not represent a commitment on the
+                                part of Lyf to be reviewing and assessing the content on your beats.</p>
+                            <p><strong>34.</strong> Further, the personal information that we collect from you may also be used for the following purposes:</p>
+                            <p><strong>a.</strong> to provide you with information or resources that you have requested – e.g. as part of the Lyf Support service</p>
+                            <p><strong>b.</strong> for internal administrative purposes</p>
+                            <p><strong>c.</strong> to send you communications about our services, programs, campaigns or other activities</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="sharing-p">Sharing public beats</h3>
+                            <p><strong>35.</strong> If you elect to make a beat public then your personal information may be shared with potentially anyone who has an internet connection, as well as your invited followers.</p>
+                            <p><strong>36.</strong> Public beats are exactly that: public. By making a beat public you acknowledge and agree that to the extent your beat involves the disclosure of personal information, including potentially sensitive information,
+                                then that information can be viewed by others: the information is no longer private.</p>
+
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="direct-p">Direct Marketing</h3>
+                            <p><strong>37.</strong> Except as expressly contemplated by this Policy, lyf will not use your personal information for direct marketing purposes. If lyf allows a third party to offer services to you via the lyf platform then
+                                this will only occur through the sharing by us of de-identified data. For example, we may share with third party providers aggregated user statistics by reference to location, gender, beat types and/or age. This information
+                                will not personally identify you.</p>
+                            <p><strong>38.</strong> By accepting lyf’s Terms of Service and the terms of this policy and by providing lyf with information or seeking its services, you consent to direct marketing to you of relevant services or opportunities
+                                identified by lyf, its related entities or third party service providers dealing with lyf. However, as noted, we will not disclose your personal information for the purpose of targeted marketing but rather only de-identified
+                                data.
+                            </p>
+                            <p><strong>39.</strong> If you do not want to receive any of this information, you may opt out of receiving direct marketing by making your beats private.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="keeping-p">Keeping your personal information up-to-date</h3>
+                            <p><strong>40.</strong> We rely on the personal information we hold about you to efficiently provide our services.</p>
+                            <p><strong>41.</strong> For this reason, it is important that the personal information we collect from you is accurate, complete and up to date. During the course of our relationship with you we will ask you to tell us of any
+                                changes to your personal information. However, you can contact us at any time to update your personal information or to tell us the information we hold about you is inaccurate or incomplete.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="security-p">Lyf security measures</h3>
+                            <p><strong>42.</strong> Lyf takes all reasonable precautions to safeguard your personal information from loss, misuse, unauthorised access, modification or disclosure.</p>
+                            <p><strong>43.</strong> We employ a number of means to protect your personal information, including:</p>
+                            <p><strong>a.</strong> external and internal premises security</p>
+                            <p><strong>b.</strong> restricted access to personal information</p>
+                            <p><strong>c.</strong> maintaining a secure computer network to prevent unauthorised access</p>
+                            <p><strong>d.</strong> regular reviewing and testing of our software in order to improve the level of security</p>
+                            <p><strong>e.</strong> internal policies in relation to lyf computer use</p>
+                            <p><strong>f.</strong> taking reasonable steps to ensure third parties provide information security of a similar standard.</p>
+                            <p><strong>44.</strong> However, notwithstanding the above, no data transmission over the internet or information stored on servers accessible through the internet can be guaranteed to be fully secure. </p>
+                            <p><strong>45.</strong> In addition, we take reasonable steps to destroy or de‐identify your personal information once we no longer need it.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="contacting-p">Contacting lyf to access your personal information</h3>
+                            <p><strong>46.</strong> You may request access to any of the personal information we hold about you. In most cases, a summary of personal information such as your name and address details, contact telephone numbers and the matters
+                                you have engaged us on are freely available to you by contacting us by any of the means set out at the end of this policy.</p>
+                            <p><strong>47.</strong> Lyf may be required by law to retain your personal information for a period of time after you have ceased your relationship with us. After the required time has passed, we proceed with the secure destruction
+                                or deletion of your personal information.</p>
+                            <p><strong>48.</strong> At any time you may access your personal information controlled by lyf to modify, correct, or delete it. You may also change or remove your content and close your account. You can also contact us for any
+                                account information which is not on your profile or readily accessible to you. If you close your account, we will remove your information from the lyf service within 24 hours.</p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="change-p">Changes to this Policy</h3>
+                            <p><strong>49.</strong> This policy may change from time-to-time. Any updated version of this Policy will be posted on our websites and will be effective from the date of posting.</p>
+                            <p>This Policy was last updated on 8 September, 2017. </p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="concerns-p">Concerns or requests for access</h3>
+                            <p><strong>50.</strong> If you have a question about this Policy or wish to lodge a request to access your personal information you can contact our Privacy Officer at <a href="mailto:privacy@lyfapp.com.au">privacy@lyfapp.com.au</a></p>
+                        </div>
+                        <div class="terms-txt">
+                            <h3 id="making-p">Making a complaint</h3>
+                            <p><strong>51.</strong> If you believe that lyf has not protected your personal information as set out in this Privacy Policy, you may lodge a complaint with us by contacting the General Manager in any of the following ways: Mail:
+                                General Manager of Lyf App Pty Ltd. Email: <a href="mailto:community@lyfapp.com.au">community@lyfapp.com.au</a></p>
+                            <p><strong>52.</strong> If you are not satisfied with the result of your complaint to lyf, you can refer your complaint to the Office of the Australian Information Commissioner. For more information, see:
+                                <a href="http://www.oaic.gov.au" target="blank">www.oaic.gov.au</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a id="hitmeup" class="back-to-top" href="javascript:void(0);" style="display:none;"></a>
+            </div>
+            <!--incogo-me-container-->
+            <style type="text/css">
+                @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+                @font-face {
+                    font-family: 'myriadpro';
+                    src: url(fonts/myriadpro.eot);
+                    src: local('myriadpro'), url(fonts/myriadpro.woff) format('woff'), url(fonts/myriadpro.ttf) format('truetype');
+                }
+                
+                @font-face {
+                    font-family: 'MyriadProLight';
+                    src: url(fonts/myriadpro-light-webfont.eot);
+                    src: url(fonts/myriadpro-light-webfont.eot?#iefix) format('embedded-opentype'), url(fonts/myriadpro-light-webfont.woff) format('woff'), url(fonts/myriadpro-light-webfont.ttf) format('truetype'), url(fonts/myriadpro-light-webfont.svg#MyriadProLight) format('svg');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                
+                @font-face {
+                    font-family: 'MyriadPro-Bold';
+                    src: url(fonts/MyriadPro-Bold.eot);
+                    src: url(fonts/MyriadPro-Bold.woff2) format('woff2'), url(fonts/MyriadPro-Bold.woff) format('woff'), url(fonts/MyriadPro-Bold.ttf) format('truetype'), url(fonts/MyriadPro-Bold.svg#MyriadPro-Bold) format('svg'), url(fonts/MyriadPro-Bold.eot?#iefix) format('embedded-opentype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                
+                footer .menu {
+                    bottom: 0px;
+                    left: 0%;
+                    background-color: #fff;
+                    width: 100%;
+                    z-index: 3;
+                    margin: 0;
+                    padding: 0;
+                    height: 80px;
+                }
+                
+                footer .menu ul {
+                    width: 100%;
+                    text-align: center;
+                    list-style: none;
+                    margin: 0;
+                    max-width: 350px;
+                    padding: 0;
+                    margin: auto;
+                }
+                
+                footer .menu ul li {
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+                
+                footer .menu>ul>li>a {
+                    font-family: 'MyriadPro-Bold';
+                    color: #383838;
+                    font-size: 16px;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+                
+                footer .menu a:hover {
+                    text-decoration: underline;
+                }
+                
+                footer .menu ul li.active a {
+                    /*	text-decoration:underline;*/
+                    color: #1fc49b;
+                }
+                
+                footer .menu>ul>li:last-child {
+                    color: #1fc49b;
+                    font-family: 'MyriadPro-Bold';
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    line-height: 1.5;
+                    font-weight: normal;
+                    margin-top: 0;
+                    position: relative;
+                    top: -15px;
+                }
+                
+                footer .menu.menu-fix>ul>li:last-child {
+                    width: 100%;
+                    line-height: 30px;
+                }
+                
+                footer .menu.menu-fix .sub-menu {
+                    left: -170px;
+                    bottom: 60px;
+                }
+                
+                footer .menu.menu-fix .sub-menu::after {
+                    left: auto;
+                    right: 13px;
+                }
+                
+                .has-sub {
+                    position: relative;
+                }
+                
+                .sub-menu {
+                    position: absolute;
+                    background: #383838;
+                    width: 224px !important;
+                    bottom: 80px;
+                    left: 0;
+                    padding: 0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    display: none;
+                }
+                
+                .has-sub:hover .sub-menu {
+                    display: block;
+                }
+                
+                .sub-menu:before {
+                    content: "";
+                    width: 50px;
+                    height: 20px;
+                    position: absolute;
+                    bottom: -20px;
+                    left: 0px;
+                }
+                
+                .sub-menu:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-right: solid transparent 11px;
+                    border-left: solid transparent 11px;
+                    border-top: solid #383838 12px;
+                    position: absolute;
+                    bottom: -12px;
+                    left: 13px;
+                }
+                
+                .sub-menu li {
+                    width: 100%;
+                    padding: 0;
+                    line-height: 36px;
+                    text-align: left;
+                }
+                
+                .sub-menu li a {
+                    display: block;
+                    width: 100%;
+                    color: #fff !important;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 0 20px;
+                    text-transform: none !important;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    font-family: 'MyriadPro-Bold';
+                }
+            </style>
+            <footer>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Lyf Squad</a></li>
+                        <li class="active has-sub">
+                            <a href="javascript:void(0)">Legals</a>
+                            <ul class="sub-menu">
+                                <li class="active"><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Service</a></li>
+                                <li><a href="community-guidelines.html">Community Guidelines</a></li>
+                            </ul>
+                        </li>
+                        <li>&copy; 2020 lyf app pty ltd</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <script>
+                $(function() {
+                    triggerGa('Lyf user', 'click', 'Privacy policy');
+                });
+            </script>
+        </div>
+        <script>
+            var BASEPATH = 'https://www.lyfapp.com/'
+            BASEPATH = BASEPATH.replace('http:', '');
+        </script>
+        <!-- <script src="/js/bootstrap311.min.js"></script> -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- <script type="text/javascript">
+            jwplayer.key = "x5a12vINibQfekVBqzausGb0JCAtgVwbzEuLXw==";
+        </script> -->
+        <script type="text/javascript">
+            scrollContentLoader("#loader_anim");
+            var parseQueryString = function() {
+                var str = window.location.search;
+                var objURL = {};
+                str.replace(
+                    new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+                    function($0, $1, $2, $3) {
+                        objURL[$1] = $3;
+                    }
+                );
+                return objURL;
+            };
+            $(document).ready(function() {
+                track_load = parseInt($("#current_page").val()) + 1;; //total loaded record group(s)
+                var loading = false; //to prevents multipal ajax loads
+                total_groups = $("#pageCount").val(); //total record group(s)
+                $(window).scroll(function() { //detect page scroll
+                    var totalScroll = parseInt(document.documentElement.clientHeight + $(document).scrollTop());
+                    if (totalScroll >= $(document).height()) //user scrolled to bottom of the page?
+                    {
+                        if ($("#scroll_type").length && $("#scroll_type").val() == 'static') {
+                            return false;
+                        }
+                        if (track_load < total_groups && loading == false) //there's more data to load
+                        {
+                            //$(".acpaging").last().attr('data-page-ref');
+                            var lastId = getListId(".acpaging", "last");
+                            //console.log(lastId);
+                            loading = true; //prevent further ajax loading
+                            $('.animation_image').show(); //show loading image
+
+                            //load data from the server using a HTTP POST request
+                            var url = BASEPATH + 'member/' + $("#ajaxSrc").val() + '/' + track_load + '?pagingCursor=' + lastId;
+                            $.post(url, {
+                                search: $("#txtSearch").val()
+                            }, function(data) {
+                                $("#contentDump").append(data); //append received data into the element
+                                //hide loading image
+                                $('.animation_image').hide(); //hide loading image once data is received
+                                track_load++; //loaded group increment
+                                loading = false;
+                            }).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
+                                $('.animation_image').hide(); //hide loading image
+                                loading = false;
+                            });
+                        }
+                    }
+                });
+            });
+
+            function getListId(cls, index, container) {
+                var id = null;
+                if (index == 'last') {
+                    id = $(cls).last().attr('data-page-ref');
+                } else if (index == 'first') {
+                    id = $(cls).first().attr('data-page-ref');
+                }
+                return id;
+            }
+        </script>
+</body>
+
+</html>
