@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <meta content="Lyf is a new social media app where users share aspects of themselves previously considered too personal for social media." name="description">
+    <meta name="twitter:title" content="Lyf App" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="https://lyfapp.com.au" />
+    <meta name="twitter:card" content="summary" />
     <meta property="al:ios:app_store_id" content="909556526" />
     <meta property="al:ios:app_name" content="Incogo" />
     <meta property="og:title" content="Lyf iOS Deep Link" />
@@ -50,8 +56,25 @@
     <meta property="og:site" content="Lyf" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Lyf is a new social media app where users share aspects of themselves previously considered too personal for social media." />
-    <title> lyf </title>
+    <title>lyf</title>
+    <meta itemprop="name" content="Lyf App" />
+    <meta itemprop="url" content="https://lyfapp.com.au" />
+    <meta itemprop="thumbnailUrl" content="" />
+    <meta itemprop="image" content="" />
     <link rel="stylesheet" href="css/legals.min.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2bc299">
+    <meta name="apple-mobile-web-app-title" content="LyfApp">
+    <meta name="application-name" content="LyfApp">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="image_src" href="" />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="canonical" href="https://lyfapp.com.au" />
     <script type="text/javascript">
         var _sf_startpt = (new Date()).getTime()
     </script>
@@ -117,10 +140,12 @@
             <nav class="navbar nav-mobile navbar-fixed-top mobile-header" style='top:0'>
                 <div class="mobile-nav-wrap">
                     <a class="back-btn pull-left-mob" href="javascript:window.history.back();"></a>
+            
                     <h1><a class="scrollToTop" href="javascript:void(0)">Privacy Policy</a></h1>
+
                 </div>
             </nav>
-            <!--incogo-me-container-->
+            
             <div class="container-fluid incogo-me-container mobile-w-2 legels-pages ">
                 <div class="container">
                     <div class="row my-content terms-content">
@@ -328,7 +353,8 @@
                 </div>
                 <a id="hitmeup" class="back-to-top" href="javascript:void(0);" style="display:none;"></a>
             </div>
-            <!--incogo-me-container-->
+
+            
             <style type="text/css">
                 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
                 @font-face {
@@ -487,6 +513,7 @@
                     font-family: 'MyriadPro-Bold';
                 }
             </style>
+
             <footer>
                 <div class="menu">
                     <ul>
@@ -496,9 +523,11 @@
                         <li class="active has-sub">
                             <a href="javascript:void(0)">Legals</a>
                             <ul class="sub-menu">
+            
                                 <li class="active"><a href="privacy_policy.html">Privacy Policy</a></li>
                                 <li><a href="terms.html">Terms of Service</a></li>
                                 <li><a href="community_guidelines.html">Community Guidelines</a></li>
+
                             </ul>
                         </li>
                         <li>&copy; 2020 lyf app pty ltd</li>
@@ -511,7 +540,7 @@
             var BASEPATH = 'https://www.lyfapp.com.au/'
             BASEPATH = BASEPATH.replace('http:', '');
         </script>
-        <!-- <script src="/js/bootstrap311.min.js"></script> -->
+        <!-- <script src="js/bootstrap311.min.js"></script> -->
         <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript">
             scrollContentLoader("#loader_anim");
@@ -563,7 +592,6 @@
                     }
                 });
             });
-
             function getListId(cls, index, container) {
                 var id = null;
                 if (index == 'last') {
